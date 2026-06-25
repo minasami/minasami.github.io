@@ -1,48 +1,110 @@
-minasami.github.io
-==================
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Drush's PEAR Channel Server</title>
-    <link rel="stylesheet" type="text/css" href="pirum.css" />
-    <link rel="alternate" type="application/rss+xml" href="http://pear.drush.org/feed.xml" title="Drush's PEAR Channel Server Latest Releases" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mina Samy Tawfik Saad - Project Management, PMO, digital transformation and healthcare operations portfolio." />
+  <title>Mina Samy Tawfik Saad | Living CV</title>
+  <style>
+    :root{--navy:#0b1f33;--blue:#1463ff;--ink:#182230;--muted:#5d6b7a;--line:#dfe6ee;--soft:#f4f7fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:auto;padding:0 24px}
+    header{background:linear-gradient(135deg,var(--navy),#173d67);color:white;padding:76px 0 54px}
+    header h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.04em}
+    header p{max-width:820px;font-size:1.15rem;color:#d9e7f5;margin:0 0 25px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.chip{border:1px solid #5b7897;background:#ffffff12;padding:7px 11px;border-radius:999px;font-size:.9rem}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;padding:11px 16px;border-radius:9px;font-weight:700}.primary{background:white;color:var(--navy)}.secondary{border:1px solid #8ea9c4;color:white}
+    nav{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}nav .wrap{display:flex;gap:22px;overflow:auto;padding-top:14px;padding-bottom:14px}nav a{white-space:nowrap;color:var(--ink);font-weight:700;font-size:.92rem}
+    section{padding:64px 0;border-bottom:1px solid var(--line)}h2{font-size:2rem;letter-spacing:-.03em;margin:0 0 26px}.lead{font-size:1.08rem;color:var(--muted);max-width:900px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px rgba(10,32,58,.06)}
+    .span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}
+    .metric{font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:2px}.small{color:var(--muted);font-size:.94rem}
+    .role{margin-bottom:30px}.role h3{margin:0;font-size:1.25rem}.meta{color:var(--muted);font-weight:600;margin:4px 0 12px}ul{padding-left:20px;margin:10px 0}li{margin:7px 0}
+    .project h3{margin-top:0}.tag{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:5px 9px;border-radius:8px;margin:3px;font-size:.84rem}
+    .timeline{border-left:3px solid #cfd9e5;padding-left:20px}.timeline .role{position:relative}.timeline .role:before{content:"";position:absolute;left:-29px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--blue);border:3px solid white;box-shadow:0 0 0 2px var(--blue)}
+    footer{background:var(--navy);color:white;padding:38px 0}footer a{color:#bcd4ff}
+    @media(max-width:800px){.span4,.span6,.span8{grid-column:span 12}header{padding-top:54px}}
+  </style>
 </head>
 <body>
-    <div id="doc" class="yui-t7">
-        <div id="hd">
-            <h1>Drush's PEAR Channel Server</h1>
-        </div>
-        <div id="bd">
-            <div class="yui-g">
-                <em>Registering</em> the channel:
-                <pre><code>pear channel-discover pear.drush.org</code></pre>
-                <em>Listing</em> available packages:
-                <pre><code>pear remote-list -c drush</code></pre>
-                <em>Installing</em> a package:
-                <pre><code>pear install drush/package_name</code></pre>
-                <em>Installing</em> a specific version/stability:
-                <pre><code>pear install drush/package_name-1.0.0
-pear install drush/package_name-beta</code></pre>
-                <em>Receiving</em> updates via a <a href="http://pear.drush.org/feed.xml">feed</a>:
-                <pre><code>http://pear.drush.org/feed.xml</code></pre>
-
-                                    <h3>drush<small> - command line shell and Unix scripting interface for Drupal</small></h3>
-                    <p>Drush is a command line shell and Unix scripting interface for Drupal.
-    If you are unfamiliar with shell scripting, reviewing the documentation
-    for your shell (e.g. man bash) or reading an online tutorial (e.g. search
-    for &amp;quot;bash tutorial&amp;quot;) will help you get the most out of Drush.</p>
-                    <table>
-                        <tr><th>Install command</th><td><strong>pear install drush/drush</strong></td></tr>
-                                                <tr><th>License</th><td>GPL</td></tr>
-                                                                        <tr><th>Maintainers</th><td>Moshe Weitzman <small>(as lead)</small>, Owen Barton <small>(as developer)</small>, Mark Sonnabaum <small>(as developer)</small>, Antoine Beaupré <small>(as developer)</small>, Greg Anderson <small>(as developer)</small>, Jonathan Araña Cruz <small>(as developer)</small>, Jonathan Hedstrom <small>(as developer)</small></td></tr>
-                                                <tr><th>Releases</th><td><a href="http://pear.drush.org/get/drush-6.0.0.tgz">6.0.0</a> <small>(devel)</small>, <a href="http://pear.drush.org/get/drush-5.8.0.tgz">5.8.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.7.0.tgz">5.7.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.6.0.tgz">5.6.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.5.0.tgz">5.5.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.4.0.tgz">5.4.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.3.0.tgz">5.3.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.2.0.tgz">5.2.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.1.0.tgz">5.1.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.0.0.tgz">5.0.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-5.0.0RC5.tgz">5.0.0RC5</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-5.0.0RC4.tgz">5.0.0RC4</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-5.0.0RC3.tgz">5.0.0RC3</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-5.0.0RC2.tgz">5.0.0RC2</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-5.0.0RC1.tgz">5.0.0RC1</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-4.6.0.tgz">4.6.0</a> <small>(devel)</small>, <a href="http://pear.drush.org/get/drush-4.5.0.tgz">4.5.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-4.5.0RC1.tgz">4.5.0RC1</a> <small>(beta)</small>, <a href="http://pear.drush.org/get/drush-4.4.0.tgz">4.4.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-4.3.0.tgz">4.3.0</a> <small>(devel)</small>, <a href="http://pear.drush.org/get/drush-4.2.0.tgz">4.2.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-4.1.0.tgz">4.1.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-4.0.0.tgz">4.0.0</a> <small>(stable)</small>, <a href="http://pear.drush.org/get/drush-4.0.0RC0.tgz">4.0.0RC0</a> <small>(beta)</small></td></tr>
-                    </table>
-                            </div>
-        </div>
-        <div id="ft">
-            <p><small>The <em>pear.drush.org</em> PEAR Channel Server is proudly powered by <a href="http://pirum.sensiolabs.org/">Pirum</a> 1.1.4</small></p>
-        </div>
+<header>
+  <div class="wrap">
+    <div class="small" style="color:#9fc5ef;font-weight:800;letter-spacing:.12em;text-transform:uppercase">Living CV & Project Portfolio</div>
+    <h1>Mina Samy Tawfik Saad</h1>
+    <p>Project Management and PMO professional, Licensed Pharmacist, and digital transformation specialist with experience leading cross-functional healthcare and pharmaceutical initiatives, building governance systems, automating workflows, and translating complex needs into measurable delivery.</p>
+    <div class="chips">
+      <span class="chip">Project Planning & Execution</span><span class="chip">PMO Governance</span><span class="chip">Stakeholder Management</span><span class="chip">Risk & Issue Management</span><span class="chip">KPI Reporting</span><span class="chip">Digital Transformation</span>
     </div>
+    <div class="actions">
+      <a class="btn primary" href="mailto:jesussavedmina@gmail.com">Contact me</a>
+      <a class="btn secondary" href="https://linkedin.com/in/jesussavedmina" target="_blank">LinkedIn</a>
+      <a class="btn secondary" href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank">View live project</a>
+    </div>
+  </div>
+</header>
+<nav><div class="wrap"><a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div></nav>
+
+<section id="profile"><div class="wrap">
+  <h2>Professional profile</h2>
+  <p class="lead">Experienced in planning initiatives, aligning stakeholders, mapping processes, defining governance, building dashboards, facilitating reviews, and supporting implementation through training and change management. My work sits at the intersection of project delivery, healthcare operations, and practical automation.</p>
+</div></section>
+
+<section id="impact"><div class="wrap">
+  <h2>Selected evidence of impact</h2>
+  <div class="grid">
+    <div class="card span4"><div class="metric">EGP 22.7M -> 44M</div><div class="small">Growth in actively tracked portfolio operations supported by centralized reporting and process visibility.</div></div>
+    <div class="card span4"><div class="metric">86,000+</div><div class="small">Egyptian medicines integrated into a bilingual clinical-commercial pharmacy platform.</div></div>
+    <div class="card span4"><div class="metric">8 roles</div><div class="small">Role-based operating model across administration, clinical review, pharmacy, branches, and delivery.</div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Professional experience</h2>
+  <div class="timeline">
+    <div class="role"><h3>Senior Coordinator - Digital Transformation & Operational Excellence</h3><div class="meta">EVA Pharma & Armanious Foundation | 2025 - Present</div><ul>
+      <li>Lead concurrent transformation initiatives involving healthcare operations, administrative teams, technology stakeholders, and external partners.</li>
+      <li>Coordinate timelines, requirements, dependencies, documentation, training, and implementation follow-up.</li>
+      <li>Build KPI dashboards, SOPs, runbooks, process maps, escalation routes, and executive reporting views.</li>
+      <li>Identify bottlenecks and operational risks, then implement corrective workflow and automation improvements.</li>
+    </ul></div>
+    <div class="role"><h3>Healthcare Projects & Process Digitalisation Coordinator</h3><div class="meta">EVA Pharma & Armanious Foundation | 2023 - 2025</div><ul>
+      <li>Mapped manual healthcare workflows and converted them into structured digital processes with clear ownership and tracking.</li>
+      <li>Coordinated clinicians, administrators, vendors, designers, and technical teams across multi-stakeholder projects.</li>
+      <li>Managed SOP repositories, operational knowledge systems, service documentation, and continuous improvement actions.</li>
+    </ul></div>
+    <div class="role"><h3>AI Content Strategist & Business Development Specialist</h3><div class="meta">Soul Pharma | 2026 - Present</div><ul>
+      <li>Support proposals, market analysis, CRM requirements, business documentation, and cross-functional product initiatives.</li>
+      <li>Develop medically accurate, audience-specific communications using structured validation and governance approaches.</li>
+    </ul></div>
+    <div class="role"><h3>Freelance Digital Systems & Cloud Solutions Consultant</h3><div class="meta">Remote | 2014 - 2023</div><ul>
+      <li>Delivered web, automation, cloud deployment, and digital process improvement projects for varied clients.</li>
+      <li>Prepared technical proposals and translated digital capabilities into practical business outcomes.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Evidence-backed projects</h2>
+  <div class="grid">
+    <article class="card span6 project"><h3>Medicine Support Hub</h3><p>End-to-end clinical-commercial pharmacy system with a requester-facing bilingual experience and an enterprise operations portal for administrators, reviewers, physicians, pharmacists, pharmacy assistants, branch managers, delivery personnel, and cosmeticians.</p><ul><li>Workflow orchestration from intake through review, fulfillment, delivery, and closure.</li><li>Clinical Support Assistant, role-based access, KPI views, and bilingual medicine search.</li><li>Live proof of concept available for demonstration.</li></ul><p><a href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank"><strong>Open live clinical assistant -></strong></a></p><span class="tag">Project planning</span><span class="tag">RBAC</span><span class="tag">Healthcare workflow</span><span class="tag">Analytics</span></article>
+    <article class="card span6 project"><h3>Employee Support Program Transformation</h3><p>Transformation of employee healthcare support operations from paper-based processes into governed digital workflows.</p><ul><li>Defined process stages, ownership, escalation routes, and service tracking.</li><li>Implemented automated routing through Google Apps Script and ServiceDesk Plus.</li><li>Created SOPs, dashboards, implementation guidance, and training materials.</li></ul><span class="tag">PMO governance</span><span class="tag">Change management</span><span class="tag">Automation</span></article>
+    <article class="card span6 project"><h3>Chronic Medication Support Program</h3><p>Coordinated reviewers, pharmacists, physicians, administrators, and fulfillment teams to improve access, monitoring, and continuity for long-term medication support.</p><span class="tag">Stakeholder coordination</span><span class="tag">KPI tracking</span><span class="tag">Process improvement</span></article>
+    <article class="card span6 project"><h3>Learning Platform Deployments</h3><p>Supported OpenEdx and Moodle deployments across cloud environments, contributing to implementation coordination, documentation, and platform administration.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">OpenShift</span><span class="tag">Deployment</span></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Capabilities & tools</h2><div class="grid">
+  <div class="card span4"><h3>Project delivery</h3><p>Scope definition, work planning, milestone tracking, project reviews, risk and issue management, executive reporting, resource coordination, and change management.</p></div>
+  <div class="card span4"><h3>Governance & analytics</h3><p>SOPs, runbooks, process maps, KPI dashboards, service metrics, documentation control, workflow standardization, and continuous improvement.</p></div>
+  <div class="card span4"><h3>Technology</h3><p>Microsoft Excel, PowerPoint, Google Workspace, Google Apps Script, ServiceDesk Plus, Python, JavaScript, React, Firebase, AWS, Azure, and GCP.</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education & credentials</h2><div class="grid">
+  <div class="card span6"><h3>Bachelor of Pharmacy</h3><p>Ain Shams University, Faculty of Pharmacy - 2021<br/>Licensed Pharmacist, Egyptian Ministry of Health</p></div>
+  <div class="card span6"><h3>Professional development</h3><p>Certified Specialty Pharmacist (CSP)<br/>PMP candidate - in progress<br/>Johns Hopkins Health Informatics Specialization - in progress<br/>Google Project Management - professional development</p></div>
+</div></div></section>
+
+<footer><div class="wrap"><h2 style="margin-bottom:8px">Let's connect</h2><p>Open to project management, PMO, digital transformation, healthcare operations, and pharmaceutical program opportunities.</p><p><a href="mailto:jesussavedmina@gmail.com">jesussavedmina@gmail.com</a> | <a href="https://linkedin.com/in/jesussavedmina">LinkedIn</a> | <a href="https://github.com/minasami">GitHub</a></p></div></footer>
 </body>
 </html>
