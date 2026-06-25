@@ -1,157 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mina Samy Tawfik Saad - Project Management, PMO, digital transformation and healthcare operations portfolio." />
-  <title>Mina Samy Tawfik Saad | Living CV</title>
-  <style>
-    :root{--navy:#0b1f33;--blue:#1463ff;--ink:#182230;--muted:#5d6b7a;--line:#dfe6ee;--soft:#f4f7fb;--white:#fff;--green:#25D366}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
-    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1120px;margin:auto;padding:0 24px}
-    header{background:linear-gradient(135deg,var(--navy),#173d67);color:white;padding:76px 0 54px}
-    header h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.04em}
-    header p{max-width:820px;font-size:1.15rem;color:#d9e7f5;margin:0 0 25px}
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.chip{border:1px solid #5b7897;background:#ffffff12;padding:7px 11px;border-radius:999px;font-size:.9rem}
-    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;padding:11px 16px;border-radius:9px;font-weight:700;border:0;cursor:pointer;font:inherit}.primary{background:white;color:var(--navy)}.secondary{border:1px solid #8ea9c4;color:white;background:transparent}.whatsapp{background:var(--green);color:#06290f}.download{background:#19b6c9;color:#052b35}
-    nav{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}nav .wrap{display:flex;gap:22px;overflow:auto;padding-top:14px;padding-bottom:14px}nav a{white-space:nowrap;color:var(--ink);font-weight:700;font-size:.92rem}
-    section{padding:64px 0;border-bottom:1px solid var(--line)}h2{font-size:2rem;letter-spacing:-.03em;margin:0 0 26px}.lead{font-size:1.08rem;color:var(--muted);max-width:900px}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px rgba(10,32,58,.06)}
-    .span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}
-    .metric{font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:2px}.small{color:var(--muted);font-size:.94rem}
-    .role{margin-bottom:30px}.role h3{margin:0;font-size:1.25rem}.meta{color:var(--muted);font-weight:600;margin:4px 0 12px}ul{padding-left:20px;margin:10px 0}li{margin:7px 0}
-    .project h3{margin-top:0}.tag{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:5px 9px;border-radius:8px;margin:3px;font-size:.84rem}
-    .timeline{border-left:3px solid #cfd9e5;padding-left:20px}.timeline .role{position:relative}.timeline .role:before{content:"";position:absolute;left:-29px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--blue);border:3px solid white;box-shadow:0 0 0 2px var(--blue)}
-    footer{background:var(--navy);color:white;padding:38px 0}footer a{color:#bcd4ff}
-    .pdf-source{background:#fff;color:#111;padding:28px;width:794px}.pdf-source header{padding:30px;background:#0b1f33}.pdf-source nav,.pdf-source .actions,.pdf-source footer{display:none}.pdf-source section{padding:28px 0}.pdf-source .card{box-shadow:none}.pdf-source h1{font-size:32px}.pdf-source h2{font-size:23px}
-    @media(max-width:800px){.span4,.span6,.span8{grid-column:span 12}header{padding-top:54px}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Mina Samy Tawfik Saad - Project Management, PMO, digital transformation and healthcare operations portfolio." />
+<title>Mina Samy Tawfik Saad | Living CV</title>
+<style>
+:root{--navy:#0b1f33;--blue:#1463ff;--teal:#18b7c9;--ink:#182230;--muted:#5d6b7a;--line:#dfe6ee;--soft:#f4f7fb;--white:#fff;--green:#25D366;--card:#fff;--bg:#fff}
+[data-theme="dark"]{--ink:#edf4fb;--muted:#a9bbcb;--line:#29425a;--soft:#102a42;--card:#10263a;--bg:#071725}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;transition:.25s}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{background:linear-gradient(135deg,var(--navy),#173d67);color:white;padding:76px 0 54px}header h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.04em}header p{max-width:840px;font-size:1.15rem;color:#d9e7f5;margin:0 0 25px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.chip{border:1px solid #5b7897;background:#ffffff12;padding:7px 11px;border-radius:999px;font-size:.9rem}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;padding:11px 16px;border-radius:9px;font-weight:700;border:0;cursor:pointer;font:inherit}.primary{background:white;color:var(--navy)}.secondary{border:1px solid #8ea9c4;color:white;background:transparent}.whatsapp{background:var(--green);color:#06290f}.download{background:var(--teal);color:#052b35}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}nav .wrap{display:flex;align-items:center;gap:22px;overflow:auto;padding-top:14px;padding-bottom:14px}nav a{white-space:nowrap;color:var(--ink);font-weight:700;font-size:.92rem}.nav-spacer{margin-left:auto}.icon-btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:9px;padding:7px 10px;cursor:pointer}
+section{padding:64px 0;border-bottom:1px solid var(--line)}h2{font-size:2rem;letter-spacing:-.03em;margin:0 0 26px}.lead{font-size:1.08rem;color:var(--muted);max-width:900px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px rgba(10,32,58,.06)}.span4{grid-column:span 4}.span6{grid-column:span 6}.metric{font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:2px}.small{color:var(--muted);font-size:.94rem}.role{margin-bottom:30px}.role h3{margin:0;font-size:1.25rem}.meta{color:var(--muted);font-weight:600;margin:4px 0 12px}ul{padding-left:20px;margin:10px 0}li{margin:7px 0}.project h3{margin-top:0}.tag{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:5px 9px;border-radius:8px;margin:3px;font-size:.84rem}.timeline{border-left:3px solid #cfd9e5;padding-left:20px}.timeline .role{position:relative}.timeline .role:before{content:"";position:absolute;left:-29px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--blue);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--blue)}
+footer{background:var(--navy);color:white;padding:38px 0}footer a{color:#bcd4ff}.floating{position:fixed;right:22px;bottom:22px;z-index:30}.assistant-btn{width:56px;height:56px;border-radius:50%;border:0;background:var(--blue);color:white;font-size:23px;cursor:pointer;box-shadow:0 10px 30px #0004}.chat{display:none;position:absolute;right:0;bottom:68px;width:min(360px,88vw);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 16px 50px #0005}.chat.open{display:block}.chat h3{margin:0 0 10px}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick button{border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:999px;padding:7px 10px;cursor:pointer}.answer{margin-top:12px;color:var(--muted);font-size:.92rem}
+.modal{display:none;position:fixed;inset:0;background:#0009;z-index:50;padding:22px;align-items:center;justify-content:center}.modal.open{display:flex}.modal-card{background:var(--card);color:var(--ink);width:min(620px,96vw);border-radius:18px;padding:24px;box-shadow:0 20px 70px #0008}.modal-card h2{margin-top:0}.cv-option{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:12px;padding:14px;margin:10px 0;cursor:pointer}.cv-option strong{display:block}.close{float:right;border:0;background:transparent;color:var(--ink);font-size:25px;cursor:pointer}
+@media(max-width:800px){.span4,.span6{grid-column:span 12}header{padding-top:54px}.nav-spacer{display:none}}
+@media print{nav,.actions,.floating,.modal,footer{display:none!important}section{padding:28px 0}.card{box-shadow:none}body{background:white;color:#111}.wrap{max-width:100%;padding:0 18px}header{padding:28px 0}.timeline .role:before{border-color:white}}
+</style>
 </head>
 <body>
-<div id="living-cv">
 <header>
-  <div class="wrap">
-    <div class="small" style="color:#9fc5ef;font-weight:800;letter-spacing:.12em;text-transform:uppercase">Living CV & Project Portfolio</div>
-    <h1>Mina Samy Tawfik Saad</h1>
-    <p>Project Management and PMO professional, Licensed Pharmacist, and digital transformation specialist with experience leading cross-functional healthcare and pharmaceutical initiatives, building governance systems, automating workflows, and translating complex needs into measurable delivery.</p>
-    <div class="chips">
-      <span class="chip">Project Planning & Execution</span><span class="chip">PMO Governance</span><span class="chip">Stakeholder Management</span><span class="chip">Risk & Issue Management</span><span class="chip">KPI Reporting</span><span class="chip">Digital Transformation</span>
-    </div>
-    <div class="actions">
-      <a class="btn primary" href="mailto:jesussavedmina@gmail.com">Email me</a>
-      <a class="btn whatsapp" href="https://wa.me/201284590503" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn secondary" href="https://linkedin.com/in/jesussavedmina" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn secondary" href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank" rel="noopener">View live project</a>
-      <button class="btn download" type="button" onclick="downloadCV()">Download CV</button>
-    </div>
-  </div>
-</header>
-<nav><div class="wrap"><a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div></nav>
-
-<main>
-<section id="profile"><div class="wrap">
-  <h2>Professional profile</h2>
-  <p class="lead">Experienced in planning initiatives, aligning stakeholders, mapping processes, defining governance, building dashboards, facilitating reviews, and supporting implementation through training and change management. My work sits at the intersection of project delivery, healthcare operations, and practical automation.</p>
-</div></section>
-
-<section id="impact"><div class="wrap">
-  <h2>Selected evidence of impact</h2>
-  <div class="grid">
-    <div class="card span4"><div class="metric">EGP 22.7M → 44M</div><div class="small">Growth in actively tracked portfolio operations supported by centralized reporting and process visibility.</div></div>
-    <div class="card span4"><div class="metric">86,000+</div><div class="small">Egyptian medicines integrated into a bilingual clinical-commercial pharmacy platform.</div></div>
-    <div class="card span4"><div class="metric">8 roles</div><div class="small">Role-based operating model across administration, clinical review, pharmacy, branches, and delivery.</div></div>
-  </div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-  <h2>Professional experience</h2>
-  <div class="timeline">
-    <div class="role"><h3>Senior Coordinator - Digital Transformation & Operational Excellence</h3><div class="meta">EVA Pharma & Armanious Foundation | 2025 - Present</div><ul>
-      <li>Lead concurrent transformation initiatives involving healthcare operations, administrative teams, technology stakeholders, and external partners.</li>
-      <li>Coordinate timelines, requirements, dependencies, documentation, training, and implementation follow-up.</li>
-      <li>Build KPI dashboards, SOPs, runbooks, process maps, escalation routes, and executive reporting views.</li>
-      <li>Identify bottlenecks and operational risks, then implement corrective workflow and automation improvements.</li>
-    </ul></div>
-    <div class="role"><h3>Healthcare Projects & Process Digitalisation Coordinator</h3><div class="meta">EVA Pharma & Armanious Foundation | 2023 - 2025</div><ul>
-      <li>Mapped manual healthcare workflows and converted them into structured digital processes with clear ownership and tracking.</li>
-      <li>Coordinated clinicians, administrators, vendors, designers, and technical teams across multi-stakeholder projects.</li>
-      <li>Managed SOP repositories, operational knowledge systems, service documentation, and continuous improvement actions.</li>
-    </ul></div>
-    <div class="role"><h3>AI Content Strategist & Business Development Specialist</h3><div class="meta">Soul Pharma | 2026 - Present</div><ul>
-      <li>Support proposals, market analysis, CRM requirements, business documentation, and cross-functional product initiatives.</li>
-      <li>Develop medically accurate, audience-specific communications using structured validation and governance approaches.</li>
-    </ul></div>
-    <div class="role"><h3>Freelance Digital Systems & Cloud Solutions Consultant</h3><div class="meta">Remote | 2014 - 2023</div><ul>
-      <li>Delivered web, automation, cloud deployment, and digital process improvement projects for varied clients.</li>
-      <li>Prepared technical proposals and translated digital capabilities into practical business outcomes.</li>
-    </ul></div>
-  </div>
-</div></section>
-
-<section id="projects"><div class="wrap">
-  <h2>Evidence-backed projects</h2>
-  <div class="grid">
-    <article class="card span6 project"><h3>Medicine Support Hub</h3><p>End-to-end clinical-commercial pharmacy system with a requester-facing bilingual experience and an enterprise operations portal for administrators, reviewers, physicians, pharmacists, pharmacy assistants, branch managers, delivery personnel, and cosmeticians.</p><ul><li>Workflow orchestration from intake through review, fulfillment, delivery, and closure.</li><li>Clinical Support Assistant, role-based access, KPI views, and bilingual medicine search.</li><li>Live proof of concept available for demonstration.</li></ul><p><a href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank"><strong>Open live clinical assistant →</strong></a></p><span class="tag">Project planning</span><span class="tag">RBAC</span><span class="tag">Healthcare workflow</span><span class="tag">Analytics</span></article>
-    <article class="card span6 project"><h3>Employee Support Program Transformation</h3><p>Transformation of employee healthcare support operations from paper-based processes into governed digital workflows.</p><ul><li>Defined process stages, ownership, escalation routes, and service tracking.</li><li>Implemented automated routing through Google Apps Script and ServiceDesk Plus.</li><li>Created SOPs, dashboards, implementation guidance, and training materials.</li></ul><span class="tag">PMO governance</span><span class="tag">Change management</span><span class="tag">Automation</span></article>
-    <article class="card span6 project"><h3>Chronic Medication Support Program</h3><p>Coordinated reviewers, pharmacists, physicians, administrators, and fulfillment teams to improve access, monitoring, and continuity for long-term medication support.</p><span class="tag">Stakeholder coordination</span><span class="tag">KPI tracking</span><span class="tag">Process improvement</span></article>
-    <article class="card span6 project"><h3>Learning Platform Deployments</h3><p>Supported OpenEdx and Moodle deployments across cloud environments, contributing to implementation coordination, documentation, and platform administration.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">OpenShift</span><span class="tag">Deployment</span></article>
-  </div>
-</div></section>
-
-<section id="skills"><div class="wrap"><h2>Capabilities & tools</h2><div class="grid">
-  <div class="card span4"><h3>Project delivery</h3><p>Scope definition, work planning, milestone tracking, project reviews, risk and issue management, executive reporting, resource coordination, and change management.</p></div>
-  <div class="card span4"><h3>Governance & analytics</h3><p>SOPs, runbooks, process maps, KPI dashboards, service metrics, documentation control, workflow standardization, and continuous improvement.</p></div>
-  <div class="card span4"><h3>Technology</h3><p>Microsoft Excel, PowerPoint, Google Workspace, Google Apps Script, ServiceDesk Plus, Python, JavaScript, React, Firebase, AWS, Azure, and GCP.</p></div>
-</div></div></section>
-
-<section id="education"><div class="wrap"><h2>Education & credentials</h2><div class="grid">
-  <div class="card span6"><h3>Bachelor of Pharmacy</h3><p>Ain Shams University, Faculty of Pharmacy - 2021<br/>Licensed Pharmacist, Egyptian Ministry of Health</p></div>
-  <div class="card span6"><h3>Professional development</h3><p>Certified Specialty Pharmacist (CSP)<br/>PMP candidate - in progress<br/>Johns Hopkins Health Informatics Specialization - in progress<br/>Google Project Management - professional development</p></div>
-</div></div></section>
-</main>
-
-<footer><div class="wrap"><h2 style="margin-bottom:8px">Let's connect</h2><p>Open to project management, PMO, digital transformation, healthcare operations, and pharmaceutical program opportunities.</p><p><a href="mailto:jesussavedmina@gmail.com">Email</a> | <a href="https://wa.me/201284590503" target="_blank" rel="noopener">WhatsApp</a> | <a href="https://linkedin.com/in/jesussavedmina">LinkedIn</a> | <a href="https://github.com/minasami">GitHub</a></p></div></footer>
+<div class="wrap">
+<div class="small" style="color:#9fc5ef;font-weight:800;letter-spacing:.12em;text-transform:uppercase">Living CV & Project Portfolio</div>
+<h1>Mina Samy Tawfik Saad</h1>
+<p>Project Management and PMO professional, Licensed Pharmacist, and digital transformation specialist with experience leading cross-functional healthcare and pharmaceutical initiatives, building governance systems, automating workflows, and translating complex needs into measurable delivery.</p>
+<div class="chips"><span class="chip">Project Planning & Execution</span><span class="chip">PMO Governance</span><span class="chip">Stakeholder Management</span><span class="chip">Risk & Issue Management</span><span class="chip">KPI Reporting</span><span class="chip">Digital Transformation</span></div>
+<div class="actions">
+<a class="btn primary" href="mailto:jesussavedmina@gmail.com">Email me</a>
+<a class="btn whatsapp" href="https://wa.me/201284590503" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn secondary" href="https://linkedin.com/in/jesussavedmina" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn secondary" href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank" rel="noopener">View live project</a>
+<button class="btn download" type="button" onclick="openCVModal()">Download CV</button>
+<a class="btn secondary" href="mailto:jesussavedmina@gmail.com?subject=Meeting%20Request%20from%20Living%20CV">Book a meeting</a>
 </div>
+</div>
+</header>
+<nav><div class="wrap"><a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><span class="nav-spacer"></span><button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">◐ Theme</button></div></nav>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC3H7jL4G0JxZ43L6cUg6wW2I7Yg21bNExjGZPpQyNzzsR7kkhP1QDYvslX5c9n4oCGKxI4V4Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<section id="profile"><div class="wrap"><h2>Professional profile</h2><p class="lead">Experienced in planning initiatives, aligning stakeholders, mapping processes, defining governance, building dashboards, facilitating reviews, and supporting implementation through training and change management. My work sits at the intersection of project delivery, healthcare operations, and practical automation.</p></div></section>
+<section id="impact"><div class="wrap"><h2>Selected evidence of impact</h2><div class="grid"><div class="card span4"><div class="metric">EGP 22.7M → 44M</div><div class="small">Growth in actively tracked portfolio operations supported by centralized reporting and process visibility.</div></div><div class="card span4"><div class="metric">86,000+</div><div class="small">Egyptian medicines integrated into a bilingual clinical-commercial pharmacy platform.</div></div><div class="card span4"><div class="metric">8 roles</div><div class="small">Role-based operating model across administration, clinical review, pharmacy, branches, and delivery.</div></div></div></div></section>
+<section id="experience"><div class="wrap"><h2>Professional experience</h2><div class="timeline">
+<div class="role"><h3>Senior Coordinator - Digital Transformation & Operational Excellence</h3><div class="meta">EVA Pharma & Armanious Foundation | 2025 - Present</div><ul><li>Lead concurrent transformation initiatives involving healthcare operations, administrative teams, technology stakeholders, and external partners.</li><li>Coordinate timelines, requirements, dependencies, documentation, training, and implementation follow-up.</li><li>Build KPI dashboards, SOPs, runbooks, process maps, escalation routes, and executive reporting views.</li><li>Identify bottlenecks and operational risks, then implement corrective workflow and automation improvements.</li></ul></div>
+<div class="role"><h3>Healthcare Projects & Process Digitalisation Coordinator</h3><div class="meta">EVA Pharma & Armanious Foundation | 2023 - 2025</div><ul><li>Mapped manual healthcare workflows and converted them into structured digital processes with clear ownership and tracking.</li><li>Coordinated clinicians, administrators, vendors, designers, and technical teams across multi-stakeholder projects.</li><li>Managed SOP repositories, operational knowledge systems, service documentation, and continuous improvement actions.</li></ul></div>
+<div class="role"><h3>AI Content Strategist & Business Development Specialist</h3><div class="meta">Soul Pharma | 2026 - Present</div><ul><li>Support proposals, market analysis, CRM requirements, business documentation, and cross-functional product initiatives.</li><li>Develop medically accurate, audience-specific communications using structured validation and governance approaches.</li></ul></div>
+<div class="role"><h3>Freelance Digital Systems & Cloud Solutions Consultant</h3><div class="meta">Remote | 2014 - 2023</div><ul><li>Delivered web, automation, cloud deployment, and digital process improvement projects for varied clients.</li><li>Prepared technical proposals and translated digital capabilities into practical business outcomes.</li></ul></div>
+</div></div></section>
+<section id="projects"><div class="wrap"><h2>Evidence-backed projects</h2><div class="grid">
+<article class="card span6 project"><h3>Medicine Support Hub</h3><p>End-to-end clinical-commercial pharmacy system with a requester-facing bilingual experience and an enterprise operations portal for administrators, reviewers, physicians, pharmacists, pharmacy assistants, branch managers, delivery personnel, and cosmeticians.</p><ul><li>Workflow orchestration from intake through review, fulfillment, delivery, and closure.</li><li>Clinical Support Assistant, role-based access, KPI views, and bilingual medicine search.</li><li>Live proof of concept available for demonstration.</li></ul><p><a href="https://medicine-support-hub--minasamitawfik.replit.app/clinical-assistant" target="_blank"><strong>Open live clinical assistant →</strong></a></p><span class="tag">Project planning</span><span class="tag">RBAC</span><span class="tag">Healthcare workflow</span><span class="tag">Analytics</span></article>
+<article class="card span6 project"><h3>Employee Support Program Transformation</h3><p>Transformation of employee healthcare support operations from paper-based processes into governed digital workflows.</p><ul><li>Defined process stages, ownership, escalation routes, and service tracking.</li><li>Implemented automated routing through Google Apps Script and ServiceDesk Plus.</li><li>Created SOPs, dashboards, implementation guidance, and training materials.</li></ul><span class="tag">PMO governance</span><span class="tag">Change management</span><span class="tag">Automation</span></article>
+<article class="card span6 project"><h3>Chronic Medication Support Program</h3><p>Coordinated reviewers, pharmacists, physicians, administrators, and fulfillment teams to improve access, monitoring, and continuity for long-term medication support.</p><span class="tag">Stakeholder coordination</span><span class="tag">KPI tracking</span><span class="tag">Process improvement</span></article>
+<article class="card span6 project"><h3>Learning Platform Deployments</h3><p>Supported OpenEdx and Moodle deployments across cloud environments, contributing to implementation coordination, documentation, and platform administration.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">OpenShift</span><span class="tag">Deployment</span></article>
+</div></div></section>
+<section id="skills"><div class="wrap"><h2>Capabilities & tools</h2><div class="grid"><div class="card span4"><h3>Project delivery</h3><p>Scope definition, work planning, milestone tracking, project reviews, risk and issue management, executive reporting, resource coordination, and change management.</p></div><div class="card span4"><h3>Governance & analytics</h3><p>SOPs, runbooks, process maps, KPI dashboards, service metrics, documentation control, workflow standardization, and continuous improvement.</p></div><div class="card span4"><h3>Technology</h3><p>Microsoft Excel, PowerPoint, Google Workspace, Google Apps Script, ServiceDesk Plus, Python, JavaScript, React, Firebase, AWS, Azure, and GCP.</p></div></div></div></section>
+<section id="education"><div class="wrap"><h2>Education & credentials</h2><div class="grid"><div class="card span6"><h3>Bachelor of Pharmacy</h3><p>Ain Shams University, Faculty of Pharmacy - 2021<br/>Licensed Pharmacist, Egyptian Ministry of Health</p></div><div class="card span6"><h3>Professional development</h3><p>Certified Specialty Pharmacist (CSP)<br/>PMP candidate - in progress<br/>Johns Hopkins Health Informatics Specialization - in progress<br/>Google Project Management - professional development</p></div></div></div></section>
+<footer><div class="wrap"><h2 style="margin-bottom:8px">Let's connect</h2><p>Open to project management, PMO, digital transformation, healthcare operations, and pharmaceutical program opportunities.</p><p><a href="mailto:jesussavedmina@gmail.com">Email</a> | <a href="https://wa.me/201284590503" target="_blank">WhatsApp</a> | <a href="https://linkedin.com/in/jesussavedmina">LinkedIn</a> | <a href="https://github.com/minasami">GitHub</a></p></div></footer>
+
+<div class="floating"><div class="chat" id="chat"><h3>Recruiter quick answers</h3><div class="quick"><button onclick="answer('experience')">Experience</button><button onclick="answer('projects')">Key projects</button><button onclick="answer('availability')">Availability</button><button onclick="answer('contact')">Contact</button></div><div class="answer" id="answer">Choose a question to see a quick summary.</div></div><button class="assistant-btn" onclick="toggleChat()" aria-label="Recruiter assistant">💬</button></div>
+
+<div class="modal" id="cvModal"><div class="modal-card"><button class="close" onclick="closeCVModal()">×</button><h2>Choose CV focus</h2><p class="small">The website will create a current PDF from the latest published information. If direct PDF generation is blocked by the browser, a print-ready version will open so you can select “Save as PDF”.</p><button class="cv-option" onclick="generateCV('General Executive')"><strong>General Executive CV</strong><span class="small">Project leadership, transformation, and operational delivery.</span></button><button class="cv-option" onclick="generateCV('Project Management & PMO')"><strong>Project Management & PMO CV</strong><span class="small">Planning, governance, risk, stakeholders, reporting, and delivery.</span></button><button class="cv-option" onclick="generateCV('Digital Health')"><strong>Digital Health CV</strong><span class="small">Healthcare systems, clinical workflows, and digital transformation.</span></button><button class="cv-option" onclick="generateCV('Medical Affairs')"><strong>Medical Affairs CV</strong><span class="small">Scientific communication, pharmacy background, and healthcare programs.</span></button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
-  async function downloadCV(){
-    const button = document.querySelector('.download');
-    const originalText = button.textContent;
-    button.disabled = true;
-    button.textContent = 'Generating CV…';
-
-    try {
-      const source = document.getElementById('living-cv').cloneNode(true);
-      source.id = 'cv-export';
-      source.classList.add('pdf-source');
-      source.querySelectorAll('nav, footer, .actions, script').forEach(el => el.remove());
-      source.querySelectorAll('a').forEach(a => {
-        const href = a.getAttribute('href');
-        if(href && href.startsWith('http')) a.setAttribute('href', href);
-      });
-      document.body.appendChild(source);
-
-      const options = {
-        margin: [8, 8, 8, 8],
-        filename: 'Mina_Samy_Tawfik_Saad_Updated_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-      };
-
-      await html2pdf().set(options).from(source).save();
-      source.remove();
-    } catch (error) {
-      console.error(error);
-      alert('The PDF could not be generated. Please refresh the page and try again.');
-    } finally {
-      button.disabled = false;
-      button.textContent = originalText;
-    }
-  }
+const root=document.documentElement;
+function toggleTheme(){const next=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',next);localStorage.setItem('theme',next)}
+const saved=localStorage.getItem('theme');if(saved)root.setAttribute('data-theme',saved);
+function toggleChat(){document.getElementById('chat').classList.toggle('open')}
+function answer(type){const answers={experience:'6+ years across project coordination, healthcare operations, digital systems, and cross-functional delivery.',projects:'Medicine Support Hub, Employee Support Program transformation, chronic medication support, and cloud learning-platform deployments.',availability:'Available after a three-week notice period.',contact:'Email: jesussavedmina@gmail.com | WhatsApp: +20 128 459 0503'};document.getElementById('answer').textContent=answers[type]}
+function openCVModal(){document.getElementById('cvModal').classList.add('open')}
+function closeCVModal(){document.getElementById('cvModal').classList.remove('open')}
+async function generateCV(focus){closeCVModal();const originalTitle=document.title;document.title='Mina Samy Tawfik Saad - '+focus+' CV';const clone=document.body.cloneNode(true);clone.querySelectorAll('nav,.actions,.floating,.modal,footer,script').forEach(e=>e.remove());const badge=document.createElement('p');badge.style.cssText='font-weight:700;color:#18b7c9;text-align:center;margin:10px 0 0';badge.textContent=focus+' Focus';clone.querySelector('header .wrap').appendChild(badge);const holder=document.createElement('div');holder.style.cssText='position:fixed;left:-10000px;top:0;width:794px;background:#fff;color:#111';holder.appendChild(clone);document.body.appendChild(holder);const filename='Mina_Samy_Tawfik_Saad_'+focus.replace(/[^a-z0-9]+/gi,'_')+'_CV.pdf';try{if(typeof html2pdf!=='function')throw new Error('PDF library unavailable');await html2pdf().set({margin:[8,8,8,8],filename,image:{type:'jpeg',quality:.96},html2canvas:{scale:1.5,useCORS:true,backgroundColor:'#ffffff'},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['css','legacy']}}).from(holder).save();holder.remove()}catch(e){console.error(e);holder.remove();alert('Your browser blocked direct PDF generation. A print-ready version will open now. Choose “Save as PDF” in the print dialog.');window.print()}finally{document.title=originalTitle}}
 </script>
 </body>
 </html>
