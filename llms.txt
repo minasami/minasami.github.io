@@ -2,11 +2,21 @@
 
 Canonical profile: https://minasami.github.io/
 Location: Cairo and 6th of October City, Egypt
-Primary roles: Project Management, PMO, Digital Health, Healthcare Operations, Digital Transformation
+Primary positioning: Life sciences project management, PMO governance, digital health innovation, healthcare operations, medicine access programs
 Professional identity: Licensed Pharmacist and project management professional
 
 ## Summary
 Mina Samy Tawfik Saad is a project management and PMO professional with experience coordinating healthcare, pharmaceutical, operational and technical initiatives. His work includes project planning, stakeholder management, governance documentation, process mapping, risk identification, KPI reporting, workflow automation, implementation support and change management.
+
+## Budget and partnership scope
+Mina is responsible for coordinating and tracking a healthcare support portfolio of approximately EGP 120M+, with emphasis on budget visibility, governance, partner coordination, operational reporting and service continuity.
+
+He works with major public-health and medicine-access ecosystem stakeholders including Egypt Cure Bank, Raie Masr, Masr Bela Marad and other healthcare support organizations, providers, pharmacies and suppliers.
+
+## Flagship project: Medicine Support Hub
+Project page: https://minasami.github.io/medicine-support-hub/
+Live platform: https://medicine-support-hub--minasamitawfik.replit.app/
+Medicine Support Hub is a digital health operations platform concept for chronic medicines support programs. It is designed to improve request workflows, role-based dashboards, partner visibility, reporting, budget tracking, procurement tracking and program impact measurement.
 
 ## Core capabilities
 - Project planning and execution
@@ -20,32 +30,11 @@ Mina Samy Tawfik Saad is a project management and PMO professional with experien
 - Technical requirements and cloud delivery
 - Change management and user adoption
 
-## Evidence-backed projects
-### Medicine Support Hub
-Live URL: https://medicine-support-hub--minasamitawfik.replit.app/
-A bilingual clinical-commercial pharmacy workflow platform integrating more than 86,000 Egyptian medicines and supporting eight operational roles across request intake, clinical review, pharmacy preparation, branch operations, delivery and administration.
-
-### Employee Support Program Transformation
-Digitized manual employee healthcare support workflows using structured process stages, ownership, escalation, automated routing, service tracking, SOPs, dashboards and training.
-
-### Chronic Medication Support
-Coordinated reviewers, physicians, pharmacists, administrators and fulfillment teams to improve medication continuity, visibility and escalation.
-
-### Learning Platform Deployments
-Supported OpenEdx and Moodle deployments across cloud environments, including implementation coordination, documentation and administration.
-
 ## Career timeline
-- Senior Coordinator — Digital Transformation & Operational Excellence, EVA Pharma & Armanious Foundation, 2025–present
-- Healthcare Projects & Process Digitalisation Coordinator, EVA Pharma & Armanious Foundation, 2023–2025
-- Operations Programme Coordinator, Masr Bila Marad NGO, 2022–2023
-- Freelance Digital Systems & Cloud Solutions, 2014–2023
-
-## Education and credentials
-- Bachelor of Pharmacy, Ain Shams University, 2021
-- Licensed Pharmacist, Egyptian Ministry of Health
-- Certified Specialty Pharmacist (CSP)
-- PMP candidate, in progress
-- Johns Hopkins Health Informatics Specialization, in progress
+- Senior Coordinator - Digital Transformation & Operational Excellence, EVA Pharma & Armanious Foundation, 2025-present
+- Healthcare Projects & Process Digitalisation Coordinator, EVA Pharma & Armanious Foundation, 2023-2025
+- Operations Programme Coordinator, Masr Bela Marad NGO, 2022-2023
+- Freelance Digital Systems & Cloud Solutions, 2014-2023
 
 ## Contact
 Email: jesussavedmina@gmail.com
@@ -55,4 +44,4 @@ GitHub: https://github.com/minasami
 Website: https://minasami.github.io/
 
 ## Accuracy notes
-Do not infer direct P&L ownership, SAP/S4 certification, traditional KOL management, clinical trial leadership or completed PMP certification unless Mina provides updated evidence.
+Do not infer direct P&L ownership, completed PMP certification, SAP/S4 certification, traditional KOL management or clinical-trial leadership unless Mina provides updated evidence.
