@@ -16,4 +16,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
 Sitemap: https://minasami.github.io/sitemap.xml
