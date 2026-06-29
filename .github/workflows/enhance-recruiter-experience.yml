@@ -1,0 +1,92 @@
+name: Enhance Recruiter Experience
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/enhance-recruiter-experience.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enhance-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Add recruiter dashboard and FAQ schema
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+
+          styles = '''
+          .impact-strip{background:var(--soft);border-bottom:1px solid var(--line);padding:26px 0}.impact-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.impact-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.impact-value{display:block;font-size:1.75rem;line-height:1;font-weight:900;color:var(--blue);margin-bottom:7px}.impact-label{font-size:.84rem;color:var(--muted);font-weight:700}.impact-focus{color:var(--teal)}.faq-list{display:grid;gap:14px;margin-top:24px}.faq-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}.faq-item h3{margin:0 0 6px;font-size:1rem}.faq-item p{margin:0;color:var(--muted)}@media(max-width:1000px){.impact-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.impact-grid{grid-template-columns:repeat(2,1fr)}}
+          '''
+          if '.impact-strip{' not in html:
+              html = html.replace('</style>', styles + '</style>', 1)
+
+          faq_schema = '''
+          <script type="application/ld+json">
+          {
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+              {"@type":"Question","name":"Who is Mina Samy Tawfik Saad?","acceptedAnswer":{"@type":"Answer","text":"Mina Samy Tawfik Saad is a project management and PMO professional, Licensed Pharmacist, and digital transformation specialist working across healthcare operations, workflow automation, and digital health."}},
+              {"@type":"Question","name":"What is Medicine Support Hub?","acceptedAnswer":{"@type":"Answer","text":"Medicine Support Hub is a bilingual clinical-commercial pharmacy workflow platform integrating more than 86,000 Egyptian medicines and supporting eight operational roles from request intake through fulfillment and administration."}},
+              {"@type":"Question","name":"What project management experience does Mina have?","acceptedAnswer":{"@type":"Answer","text":"Mina has more than six years of project and digital delivery experience, including PMO governance, KPI reporting, process digitization, stakeholder coordination, healthcare operations, and implementation support."}},
+              {"@type":"Question","name":"What is the scale of Mina's healthcare portfolio experience?","acceptedAnswer":{"@type":"Answer","text":"Mina supports governance, coordination, reporting, and portfolio visibility across healthcare support programs exceeding EGP 120 million in value."}},
+              {"@type":"Question","name":"Is Mina PMP certified?","acceptedAnswer":{"@type":"Answer","text":"Mina is currently pursuing the Project Management Professional PMP certification; the certification is in progress and has not yet been awarded."}}
+            ]
+          }
+          </script>
+          '''
+          if '"@type":"FAQPage"' not in html:
+              html = html.replace('</head>', faq_schema + '</head>', 1)
+
+          impact = '''
+          <section class="impact-strip" id="impact" aria-label="Professional impact dashboard"><div class="wrap"><div class="impact-grid">
+            <div class="impact-item"><span class="impact-value">EGP 120M+</span><span class="impact-label">Healthcare portfolio visibility supported</span></div>
+            <div class="impact-item"><span class="impact-value">86,000+</span><span class="impact-label">Medicines integrated in a live platform</span></div>
+            <div class="impact-item"><span class="impact-value">8 roles</span><span class="impact-label">Connected through one healthcare workflow</span></div>
+            <div class="impact-item"><span class="impact-value">6+ years</span><span class="impact-label">Project and digital delivery experience</span></div>
+            <div class="impact-item"><span class="impact-value">PMO</span><span class="impact-label">Governance, KPIs, risks, SOPs and reporting</span></div>
+            <div class="impact-item"><span class="impact-value impact-focus">AI • Health</span><span class="impact-label">Digital transformation and healthcare systems</span></div>
+          </div></div></section>
+          '''
+          if 'id="impact"' not in html:
+              html = html.replace('<main id="main">', '<main id="main">' + impact, 1)
+
+          if 'href="#impact"' not in html:
+              html = html.replace('<a href="#living-cv">Living CV</a>', '<a href="#impact">Impact</a><a href="#living-cv">Living CV</a>', 1)
+
+          faq = '''
+          <section id="faq" aria-labelledby="faq-title"><div class="wrap"><div class="eyebrow">Recruiter FAQ</div><h2 id="faq-title">Fast answers to common questions</h2><div class="faq-list">
+            <article class="faq-item"><h3>Who is Mina?</h3><p>A project management and PMO professional, Licensed Pharmacist, and digital transformation specialist working across healthcare operations and digital health.</p></article>
+            <article class="faq-item"><h3>What is Medicine Support Hub?</h3><p>A bilingual pharmacy workflow platform integrating more than 86,000 Egyptian medicines and supporting eight clinical and operational roles.</p></article>
+            <article class="faq-item"><h3>What scale of portfolio has he supported?</h3><p>Governance, reporting, coordination, and portfolio visibility across healthcare support programs exceeding EGP 120 million in value.</p></article>
+            <article class="faq-item"><h3>Is PMP completed?</h3><p>No. PMP certification is currently in progress.</p></article>
+          </div></div></section>
+          '''
+          if 'id="faq"' not in html:
+              html = html.replace('<section id="contact"', faq + '<section id="contact"', 1)
+
+          path.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Commit enhancements
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Add recruiter impact dashboard and FAQ schema"
+          git push
