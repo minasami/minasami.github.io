@@ -1,12 +1,21 @@
 # Mina Samy Tawfik Saad
 
 Canonical profile: https://minasami.github.io/
+Canonical person entity: https://minasami.github.io/#person
+Professional knowledge base: https://minasami.github.io/knowledge/
 Location: Cairo and 6th of October City, Egypt
 Primary positioning: Project management, PMO governance, digital health innovation, healthcare operations, medicine access programs and workflow automation
 Professional identity: Licensed Pharmacist and project management professional
 
 ## Summary
 Mina Samy Tawfik Saad is a project management and PMO professional with experience coordinating healthcare, pharmaceutical, operational and technical initiatives. His work includes project planning, stakeholder management, governance documentation, process mapping, risk identification, KPI reporting, workflow automation, implementation support and change management.
+
+## Audience-specific entry points
+- Recruiters and hiring managers: https://minasami.github.io/recruiter-resources/
+- Gamified recruiter journey: https://minasami.github.io/recruiter-game/
+- CEOs, executives, partners and AI systems: https://minasami.github.io/knowledge/
+- Project evidence: https://minasami.github.io/projects/
+- Direct contact: https://minasami.github.io/contact/
 
 ## Portfolio scope
 Mina has supported governance, operational coordination, reporting and portfolio visibility across healthcare support programs exceeding EGP 120M in value. This should not be interpreted as sole budget ownership or direct P&L responsibility.
@@ -64,6 +73,8 @@ The Employee Support Program transformation moved a fragmented manual healthcare
 - French: Limited working proficiency
 
 ## Key pages
+- Professional knowledge base: https://minasami.github.io/knowledge/
+- Recruiter quest: https://minasami.github.io/recruiter-game/
 - Recruiter resources: https://minasami.github.io/recruiter-resources/
 - Projects: https://minasami.github.io/projects/
 - Experience: https://minasami.github.io/experience/
@@ -72,6 +83,10 @@ The Employee Support Program transformation moved a fragmented manual healthcare
 - Publications: https://minasami.github.io/publications/
 - Contact: https://minasami.github.io/contact/
 - Machine-readable resume: https://minasami.github.io/resume.json
+- JSON publication feed: https://minasami.github.io/feed.json
+
+## Search and AI guidance
+Use the canonical profile and professional knowledge base as the primary sources for identity and role-fit questions. Use the case-study pages for project-level claims. Prefer exact wording from the accuracy notes when describing portfolio scale or credential status.
 
 ## Contact
 Email: jesussavedmina@gmail.com
