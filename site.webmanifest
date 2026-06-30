@@ -1,12 +1,49 @@
 {
+  "id": "/",
   "name": "Mina Samy Tawfik Saad — Living CV",
   "short_name": "Mina Tawfik",
   "description": "Project Management, PMO, Digital Health and Digital Transformation portfolio.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#071a2d",
   "theme_color": "#071a2d",
+  "categories": ["business", "productivity", "education"],
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
-    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Recruiter Resources",
+      "short_name": "Recruiter",
+      "description": "Open Mina's recruiter-ready executive profile.",
+      "url": "/recruiter-resources/"
+    },
+    {
+      "name": "Medicine Support Hub",
+      "short_name": "Medicine Hub",
+      "description": "Open the flagship digital-health case study.",
+      "url": "/medicine-support-hub/"
+    },
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Explore Mina's project portfolio.",
+      "url": "/projects/"
+    },
+    {
+      "name": "Contact Mina",
+      "short_name": "Contact",
+      "description": "Open contact options.",
+      "url": "/contact/"
+    }
   ]
 }
