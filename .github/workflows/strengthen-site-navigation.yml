@@ -1,0 +1,65 @@
+name: Strengthen Site Navigation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/strengthen-site-navigation.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add strategic navigation links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          files = {
+              'index.html': [
+                  ('<a href="#contact">Contact</a>', '<a href="/leadership/">Leadership</a><a href="/research/">Research</a><a href="/publications/">Insights</a><a href="/recruiter-resources/">Recruiter Resources</a><a href="#contact">Contact</a>'),
+                  ('<a href="/llms.txt">AI profile</a>', '<a href="/leadership/">Leadership</a> · <a href="/research/">Research</a> · <a href="/publications/">Insights</a> · <a href="/recruiter-resources/">Recruiter Resources</a> · <a href="/llms.txt">AI profile</a>')
+              ],
+              'recruiter-resources/index.html': [
+                  ('<a href="/credentials/">Credentials</a><a href="/contact/">Contact</a>', '<a href="/credentials/">Credentials</a><a href="/leadership/">Leadership</a><a href="/contact/">Contact</a>')
+              ],
+              'leadership/index.html': [
+                  ('<a href="/recruiter-resources/">Recruiter Resources</a><a href="/contact/">Contact</a>', '<a href="/recruiter-resources/">Recruiter Resources</a><a href="/research/">Research</a><a href="/publications/">Insights</a><a href="/contact/">Contact</a>')
+              ]
+          }
+
+          changed = False
+          for file_name, replacements in files.items():
+              path = Path(file_name)
+              if not path.exists():
+                  continue
+              text = path.read_text(encoding='utf-8')
+              original = text
+              for old, new in replacements:
+                  if old in text and new not in text:
+                      text = text.replace(old, new, 1)
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed = True
+
+          if not changed:
+              print('No navigation changes needed.')
+          PY
+
+      - name: Commit navigation improvements
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html recruiter-resources/index.html leadership/index.html
+          git commit -m "Strengthen navigation across professional site"
+          git push
