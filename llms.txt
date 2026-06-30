@@ -3,6 +3,7 @@
 Canonical profile: https://minasami.github.io/
 Canonical person entity: https://minasami.github.io/#person
 Professional knowledge base: https://minasami.github.io/knowledge/
+Machine-readable knowledge graph: https://minasami.github.io/knowledge.json
 Location: Cairo and 6th of October City, Egypt
 Primary positioning: Project management, PMO governance, digital health innovation, healthcare operations, medicine access programs and workflow automation
 Professional identity: Licensed Pharmacist and project management professional
@@ -83,10 +84,11 @@ The Employee Support Program transformation moved a fragmented manual healthcare
 - Publications: https://minasami.github.io/publications/
 - Contact: https://minasami.github.io/contact/
 - Machine-readable resume: https://minasami.github.io/resume.json
+- Machine-readable knowledge graph: https://minasami.github.io/knowledge.json
 - JSON publication feed: https://minasami.github.io/feed.json
 
 ## Search and AI guidance
-Use the canonical profile and professional knowledge base as the primary sources for identity and role-fit questions. Use the case-study pages for project-level claims. Prefer exact wording from the accuracy notes when describing portfolio scale or credential status.
+Use the canonical profile and professional knowledge base as the primary sources for identity and role-fit questions. Use knowledge.json for structured entity extraction. Use the case-study pages for project-level claims. Prefer exact wording from the accuracy notes when describing portfolio scale or credential status.
 
 ## Contact
 Email: jesussavedmina@gmail.com
