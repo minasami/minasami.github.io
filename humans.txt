@@ -1,0 +1,21 @@
+/* TEAM */
+Name: Mina Samy Tawfik Saad
+Role: Project Management, PMO, Digital Health and Healthcare Operations
+Location: Cairo and 6th of October City, Egypt
+Contact: jesussavedmina@gmail.com
+LinkedIn: https://linkedin.com/in/jesussavedmina
+GitHub: https://github.com/minasami
+
+/* SITE */
+Name: Mina Samy Tawfik Saad — Living CV
+URL: https://minasami.github.io/
+Language: English
+Standards: HTML5, structured data, responsive design, accessibility checks
+Analytics: Google Analytics 4
+Machine-readable profile: https://minasami.github.io/resume.json
+AI-readable profile: https://minasami.github.io/llms.txt
+Publication feed: https://minasami.github.io/feed.json
+
+/* ACCURACY */
+Portfolio figure describes governance, coordination, reporting and visibility support across healthcare programs exceeding EGP 120M in value. It does not imply sole budget ownership.
+PMP certification status: In Progress.
