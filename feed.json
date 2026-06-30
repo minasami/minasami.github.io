@@ -1,0 +1,37 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Mina Samy Tawfik Saad — Insights & Publications",
+  "home_page_url": "https://minasami.github.io/publications/",
+  "feed_url": "https://minasami.github.io/feed.json",
+  "description": "Practical writing on healthcare transformation, PMO governance, medicine access, digital workflows and health informatics.",
+  "authors": [
+    {
+      "name": "Mina Samy Tawfik Saad",
+      "url": "https://minasami.github.io/"
+    }
+  ],
+  "language": "en",
+  "items": [
+    {
+      "id": "https://minasami.github.io/publications/#how-to-digitize-a-healthcare-support-workflow",
+      "url": "https://minasami.github.io/publications/#how-to-digitize-a-healthcare-support-workflow",
+      "title": "How to Digitize a Healthcare Support Workflow",
+      "content_text": "A practical note on process ownership, clinical and operational decisions, escalation, reporting and training in healthcare workflow transformation.",
+      "date_published": "2026-06-30T00:00:00Z"
+    },
+    {
+      "id": "https://minasami.github.io/medicine-support-hub/",
+      "url": "https://minasami.github.io/medicine-support-hub/",
+      "title": "Building Medicine Support Hub: Lessons from Workflow Architecture",
+      "content_text": "Design principles behind a bilingual digital-health platform connecting requesters, reviewers, physicians, pharmacists, procurement, delivery and analytics.",
+      "date_published": "2026-06-29T00:00:00Z"
+    },
+    {
+      "id": "https://minasami.github.io/employee-support-program/",
+      "url": "https://minasami.github.io/employee-support-program/",
+      "title": "Employee Support Program Transformation",
+      "content_text": "A case study on moving a fragmented manual healthcare-support process toward a governed ticket-based operating model.",
+      "date_published": "2026-06-29T00:00:00Z"
+    }
+  ]
+}
