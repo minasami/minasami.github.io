@@ -2,21 +2,25 @@
 
 Canonical profile: https://minasami.github.io/
 Location: Cairo and 6th of October City, Egypt
-Primary positioning: Life sciences project management, PMO governance, digital health innovation, healthcare operations, medicine access programs
+Primary positioning: Project management, PMO governance, digital health innovation, healthcare operations, medicine access programs and workflow automation
 Professional identity: Licensed Pharmacist and project management professional
 
 ## Summary
 Mina Samy Tawfik Saad is a project management and PMO professional with experience coordinating healthcare, pharmaceutical, operational and technical initiatives. His work includes project planning, stakeholder management, governance documentation, process mapping, risk identification, KPI reporting, workflow automation, implementation support and change management.
 
-## Budget and partnership scope
-Mina is responsible for coordinating and tracking a healthcare support portfolio of approximately EGP 120M+, with emphasis on budget visibility, governance, partner coordination, operational reporting and service continuity.
+## Portfolio scope
+Mina has supported governance, operational coordination, reporting and portfolio visibility across healthcare support programs exceeding EGP 120M in value. This should not be interpreted as sole budget ownership or direct P&L responsibility.
 
-He works with major public-health and medicine-access ecosystem stakeholders including Egypt Cure Bank, Raie Masr, Masr Bela Marad and other healthcare support organizations, providers, pharmacies and suppliers.
+He has worked across the medicine-access and public-health ecosystem with healthcare support organizations, providers, pharmacies, suppliers and internal corporate stakeholders.
 
 ## Flagship project: Medicine Support Hub
-Project page: https://minasami.github.io/medicine-support-hub/
+Case study: https://minasami.github.io/medicine-support-hub/
 Live platform: https://medicine-support-hub--minasamitawfik.replit.app/
-Medicine Support Hub is a digital health operations platform concept for chronic medicines support programs. It is designed to improve request workflows, role-based dashboards, partner visibility, reporting, budget tracking, procurement tracking and program impact measurement.
+Medicine Support Hub is a bilingual digital health operations platform for chronic medicines support. It integrates more than 86,000 Egyptian medicines and supports eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration and analytics.
+
+## Transformation case study
+Employee Support Program case study: https://minasami.github.io/employee-support-program/
+The Employee Support Program transformation moved a fragmented manual healthcare support process toward a governed ticket-based operating model using ServiceDesk Plus, Google Forms, Google Apps Script, dashboards, SOPs, escalation pathways and role-based training.
 
 ## Core capabilities
 - Project planning and execution
@@ -29,12 +33,45 @@ Medicine Support Hub is a digital health operations platform concept for chronic
 - Process improvement and automation
 - Technical requirements and cloud delivery
 - Change management and user adoption
+- Training and facilitation
+
+## Technical tools and platforms
+- ServiceDesk Plus
+- Google Forms and Google Apps Script
+- React and TypeScript
+- Supabase and PostgreSQL
+- Firebase
+- Python and JavaScript
+- AWS, Azure and GCP
+- Moodle and Open edX
 
 ## Career timeline
 - Senior Coordinator - Digital Transformation & Operational Excellence, EVA Pharma & Armanious Foundation, 2025-present
 - Healthcare Projects & Process Digitalisation Coordinator, EVA Pharma & Armanious Foundation, 2023-2025
-- Operations Programme Coordinator, Masr Bela Marad NGO, 2022-2023
+- Operations Programme Coordinator, Masr Bila Marad NGO, 2022-2023
 - Freelance Digital Systems & Cloud Solutions, 2014-2023
+
+## Education and credentials
+- Bachelor of Pharmacy, Ain Shams University, 2021
+- Licensed Pharmacist, Egyptian Ministry of Health
+- Certified Specialty Pharmacist (CSP)
+- Project Management Professional (PMP®) certification: In Progress
+- Johns Hopkins Health Informatics specialization: In Progress
+
+## Languages
+- Arabic: Native
+- English: Professional working proficiency
+- French: Limited working proficiency
+
+## Key pages
+- Recruiter resources: https://minasami.github.io/recruiter-resources/
+- Projects: https://minasami.github.io/projects/
+- Experience: https://minasami.github.io/experience/
+- Leadership: https://minasami.github.io/leadership/
+- Research: https://minasami.github.io/research/
+- Publications: https://minasami.github.io/publications/
+- Contact: https://minasami.github.io/contact/
+- Machine-readable resume: https://minasami.github.io/resume.json
 
 ## Contact
 Email: jesussavedmina@gmail.com
