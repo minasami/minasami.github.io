@@ -103,6 +103,30 @@ Workflow file:
 .github/workflows/site-quality.yml
 ```
 
+## Maintenance checklist
+
+Before publishing a significant change:
+
+- Confirm that professional claims are evidence-based
+- Keep PMP status written as **In Progress** until formally awarded
+- Check that all new pages are linked internally
+- Add important public pages to `sitemap.xml`
+- Verify mobile layout and keyboard navigation
+- Confirm that GA4 events do not capture sensitive information
+- Review privacy and accessibility statements after analytics or platform changes
+- Run the Site Quality Checks workflow and inspect the Lighthouse artifact
+
+## Content roadmap
+
+Planned high-value improvements include:
+
+- Additional project case studies with measurable outcomes
+- More practical publications on healthcare transformation and PMO governance
+- Better social-sharing preview graphics
+- Downloadable one-page project briefs
+- More visual workflow and architecture diagrams
+- Periodic review of recruiter-assistant answers and accuracy notes
+
 ## Accuracy notes
 
 - The **EGP 120M+** figure refers to governance, operational coordination, reporting and portfolio visibility support across healthcare programs. It does not imply sole budget ownership or direct P&L responsibility.
