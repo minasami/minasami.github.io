@@ -103,6 +103,16 @@ Workflow file:
 .github/workflows/site-quality.yml
 ```
 
+## Pull request workflow
+
+Routine improvements should use a short-lived branch and pull request rather than writing directly to `master`.
+
+- Keep each pull request focused on one coherent improvement.
+- Include a clear summary and testing notes.
+- Let the automated site-quality checks complete.
+- Enable auto-merge so approved changes merge after required checks pass.
+- Continue using direct commits only for urgent fixes or simple administrative updates.
+
 ## Maintenance checklist
 
 Before publishing a significant change:
