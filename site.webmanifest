@@ -27,6 +27,12 @@
   ],
   "shortcuts": [
     {
+      "name": "Recruiter Quest",
+      "short_name": "Quest",
+      "description": "Open the gamified recruiter evidence journey.",
+      "url": "/recruiter-game/"
+    },
+    {
       "name": "Recruiter Resources",
       "short_name": "Recruiter",
       "description": "Open Mina's recruiter-ready executive profile.",
