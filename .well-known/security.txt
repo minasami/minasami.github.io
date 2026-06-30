@@ -1,0 +1,6 @@
+Contact: mailto:jesussavedmina@gmail.com
+Canonical: https://minasami.github.io/.well-known/security.txt
+Preferred-Languages: en, ar
+Policy: https://minasami.github.io/privacy/
+Expires: 2027-06-30T23:59:59Z
+Acknowledgments: https://minasami.github.io/
