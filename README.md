@@ -19,6 +19,7 @@ The site is designed for:
 ## Main sections
 
 - [Living CV](https://minasami.github.io/)
+- [Recruiter Quest](https://minasami.github.io/recruiter-game/)
 - [Recruiter Resources](https://minasami.github.io/recruiter-resources/)
 - [Projects](https://minasami.github.io/projects/)
 - [Medicine Support Hub](https://minasami.github.io/medicine-support-hub/)
@@ -29,6 +30,21 @@ The site is designed for:
 - [Insights & Publications](https://minasami.github.io/publications/)
 - [Credentials](https://minasami.github.io/credentials/)
 - [Contact](https://minasami.github.io/contact/)
+
+## Recruiter experience
+
+The site now includes a gamified recruiter path:
+
+- Impact metrics
+- Flagship project proof
+- Transformation case study
+- Skills evidence
+- Role-fit CV generation
+- Contact and next-step actions
+
+Recruiter Quest:
+
+https://minasami.github.io/recruiter-game/
 
 ## Machine-readable resources
 
