@@ -1,0 +1,42 @@
+name: Site Quality Checks
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate HTML files
+        run: npx --yes html-validate@latest "**/*.html"
+
+      - name: Check website links
+        run: npx --yes linkinator@latest https://minasami.github.io/ --recurse --skip "medicine-support-hub--minasamitawfik.replit.app"
+
+      - name: Run Lighthouse audit
+        run: |
+          npx --yes lighthouse@latest https://minasami.github.io/ --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-home.json
+          node -e "const r=require('./lighthouse-home.json'); const c=r.categories; console.log({performance:c.performance.score,accessibility:c.accessibility.score,bestPractices:c['best-practices'].score,seo:c.seo.score}); if(c.accessibility.score<0.8||c.seo.score<0.8) process.exit(1);"
+
+      - name: Upload Lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-home-report
+          path: lighthouse-home.json
