@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://minasami.github.io/#person",
+  "name": "Mina Samy Tawfik Saad",
+  "alternateName": ["Mina Tawfik", "Mina Sami"],
+  "url": "https://minasami.github.io/",
+  "image": "https://avatars.githubusercontent.com/u/6665807?v=4",
+  "email": "mailto:jesussavedmina@gmail.com",
+  "telephone": "+201284590503",
+  "jobTitle": "Project Management and PMO Professional",
+  "description": "Licensed Pharmacist and digital transformation specialist working across healthcare operations, PMO governance, workflow automation, technical delivery and digital health.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cairo",
+    "addressCountry": "EG"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Ain Shams University"
+  },
+  "knowsAbout": [
+    "Project Management",
+    "PMO Governance",
+    "Healthcare Operations",
+    "Digital Health",
+    "Digital Transformation",
+    "Workflow Automation",
+    "Stakeholder Management",
+    "Risk Management",
+    "KPI Reporting",
+    "Operational Excellence",
+    "Medicine Access"
+  ],
+  "sameAs": [
+    "https://linkedin.com/in/jesussavedmina",
+    "https://github.com/minasami"
+  ],
+  "hasOccupation": [
+    {"@type": "Occupation", "name": "Project Manager"},
+    {"@type": "Occupation", "name": "PMO Specialist"},
+    {"@type": "Occupation", "name": "Digital Health Project Manager"},
+    {"@type": "Occupation", "name": "Healthcare Transformation Manager"},
+    {"@type": "Occupation", "name": "Technical Project Manager"}
+  ],
+  "subjectOf": [
+    {"@type": "ProfilePage", "name": "Professional Knowledge Base", "url": "https://minasami.github.io/knowledge/"},
+    {"@type": "ProfilePage", "name": "Recruiter Resources", "url": "https://minasami.github.io/recruiter-resources/"},
+    {"@type": "WebPage", "name": "Recruiter Quest", "url": "https://minasami.github.io/recruiter-game/"},
+    {"@type": "CreativeWork", "name": "Medicine Support Hub Case Study", "url": "https://minasami.github.io/medicine-support-hub/"},
+    {"@type": "CreativeWork", "name": "Employee Support Program Transformation", "url": "https://minasami.github.io/employee-support-program/"}
+  ],
+  "additionalProperty": [
+    {"@type": "PropertyValue", "name": "Project and digital delivery experience", "value": "6+ years"},
+    {"@type": "PropertyValue", "name": "Healthcare portfolio visibility supported", "value": "EGP 120M+"},
+    {"@type": "PropertyValue", "name": "Medicines integrated in Medicine Support Hub", "value": "86,000+"},
+    {"@type": "PropertyValue", "name": "Role-based workflows", "value": "8"},
+    {"@type": "PropertyValue", "name": "PMP status", "value": "In Progress"}
+  ]
+}
