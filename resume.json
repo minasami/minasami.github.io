@@ -6,11 +6,22 @@
     "email": "jesussavedmina@gmail.com",
     "phone": "+20 128 459 0503",
     "url": "https://minasami.github.io/",
-    "summary": "Project management and PMO professional with experience across healthcare operations, pharmaceutical programs, workflow automation, governance, KPI reporting and cross-functional delivery.",
-    "location": {"city": "Cairo / 6th of October City", "countryCode": "EG"},
+    "summary": "Project management and PMO professional with experience across healthcare operations, pharmaceutical programs, workflow automation, governance, KPI reporting, stakeholder coordination and cross-functional delivery.",
+    "location": {
+      "city": "Cairo / 6th of October City",
+      "countryCode": "EG"
+    },
     "profiles": [
-      {"network": "LinkedIn", "username": "jesussavedmina", "url": "https://linkedin.com/in/jesussavedmina"},
-      {"network": "GitHub", "username": "minasami", "url": "https://github.com/minasami"}
+      {
+        "network": "LinkedIn",
+        "username": "jesussavedmina",
+        "url": "https://linkedin.com/in/jesussavedmina"
+      },
+      {
+        "network": "GitHub",
+        "username": "minasami",
+        "url": "https://github.com/minasami"
+      }
     ]
   },
   "work": [
@@ -20,21 +31,32 @@
       "startDate": "2025",
       "endDate": "Present",
       "summary": "Leads transformation initiatives, governance, dashboards, workflow improvement, stakeholder alignment and implementation support.",
-      "highlights": ["Project planning and dependency coordination", "KPI dashboards and executive reporting", "SOPs, runbooks and process maps", "Risk and bottleneck identification", "Training and change management"]
+      "highlights": [
+        "Supported governance, operational coordination, reporting and portfolio visibility across healthcare support programs exceeding EGP 120M in value",
+        "Built KPI dashboards and executive reporting views",
+        "Developed SOPs, runbooks and process maps",
+        "Identified operational risks, bottlenecks and corrective actions",
+        "Designed and delivered training and change-management support"
+      ]
     },
     {
       "name": "EVA Pharma & Armanious Foundation",
       "position": "Healthcare Projects & Process Digitalisation Coordinator",
       "startDate": "2023",
       "endDate": "2025",
-      "summary": "Mapped and digitized healthcare workflows, coordinated multidisciplinary stakeholders and supported portfolio reporting and continuous improvement."
+      "summary": "Mapped and digitized healthcare workflows, coordinated multidisciplinary stakeholders and supported portfolio reporting and continuous improvement.",
+      "highlights": [
+        "Digitized employee healthcare support workflows",
+        "Connected Google Forms to ServiceDesk Plus through Google Apps Script",
+        "Created dashboards, SOPs, escalation pathways and role-based guidance"
+      ]
     },
     {
       "name": "Masr Bila Marad NGO",
       "position": "Operations Programme Coordinator",
       "startDate": "2022",
       "endDate": "2023",
-      "summary": "Supported healthcare program operations, field coordination, logistics and service delivery."
+      "summary": "Supported healthcare program operations, field coordination, logistics, referrals and service delivery."
     },
     {
       "name": "Freelance",
@@ -44,32 +66,88 @@
       "summary": "Delivered web, cloud, automation and digital process projects for diverse clients."
     }
   ],
-  "education": [{"institution": "Ain Shams University", "area": "Pharmacy", "studyType": "Bachelor of Pharmacy", "endDate": "2021"}],
+  "education": [
+    {
+      "institution": "Ain Shams University",
+      "area": "Pharmacy",
+      "studyType": "Bachelor of Pharmacy",
+      "endDate": "2021"
+    }
+  ],
   "skills": [
-    {"name": "Project Management", "keywords": ["Planning", "Milestones", "Dependencies", "Risk Management", "Stakeholder Management"]},
-    {"name": "PMO Governance", "keywords": ["SOPs", "Runbooks", "Project Controls", "Executive Reporting", "KPI Dashboards"]},
-    {"name": "Digital Health", "keywords": ["Healthcare Operations", "Clinical Workflows", "Medication Support", "Health Informatics"]},
-    {"name": "Digital Transformation", "keywords": ["Workflow Automation", "Google Apps Script", "ServiceDesk Plus", "React", "Firebase", "Python", "AWS", "Azure", "GCP"]}
+    {
+      "name": "Project Management",
+      "keywords": ["Planning", "Milestones", "Dependencies", "Risk Management", "Stakeholder Management", "Change Management"]
+    },
+    {
+      "name": "PMO Governance",
+      "keywords": ["SOPs", "Runbooks", "Project Controls", "Executive Reporting", "KPI Dashboards", "Escalation"]
+    },
+    {
+      "name": "Digital Health",
+      "keywords": ["Healthcare Operations", "Clinical Workflows", "Medication Support", "Health Informatics", "Medicine Access"]
+    },
+    {
+      "name": "Digital Transformation",
+      "keywords": ["Workflow Automation", "Google Apps Script", "ServiceDesk Plus", "React", "TypeScript", "Supabase", "Firebase", "Python", "AWS", "Azure", "GCP"]
+    }
   ],
   "projects": [
     {
       "name": "Medicine Support Hub",
-      "description": "Bilingual clinical-commercial pharmacy workflow platform with more than 86,000 medicines and eight operational roles.",
-      "url": "https://medicine-support-hub--minasamitawfik.replit.app/",
-      "keywords": ["Digital Health", "Project Management", "Workflow Automation", "RBAC", "Analytics"]
+      "description": "Bilingual digital-health workflow platform with more than 86,000 Egyptian medicines and eight clinical and operational roles.",
+      "url": "https://minasami.github.io/medicine-support-hub/",
+      "keywords": ["Digital Health", "Project Management", "Workflow Automation", "RBAC", "Analytics", "Pharmacy Operations"]
     },
-    {"name": "Employee Support Program Transformation", "description": "Digitized manual employee healthcare support workflows with governance, routing, tracking, SOPs, dashboards and training."},
-    {"name": "Chronic Medication Support", "description": "Multi-stakeholder healthcare program coordination supporting medication continuity and operational visibility."}
+    {
+      "name": "Employee Support Program Transformation",
+      "description": "Digitized manual employee healthcare support workflows using ServiceDesk Plus, Google Forms, Google Apps Script, governance, routing, tracking, SOPs, dashboards and training.",
+      "url": "https://minasami.github.io/employee-support-program/",
+      "keywords": ["ServiceDesk Plus", "Google Apps Script", "PMO Governance", "Change Management", "Healthcare Operations"]
+    },
+    {
+      "name": "Chronic Medication Support",
+      "description": "Multi-stakeholder healthcare program coordination supporting medication continuity, fulfillment visibility and operational escalation."
+    }
   ],
   "certificates": [
-    {"name": "Licensed Pharmacist", "issuer": "Egyptian Ministry of Health"},
-    {"name": "Certified Specialty Pharmacist (CSP)"},
-    {"name": "PMP Candidate", "issuer": "In progress"},
-    {"name": "Health Informatics Specialization", "issuer": "Johns Hopkins University", "url": "In progress"}
+    {
+      "name": "Licensed Pharmacist",
+      "issuer": "Egyptian Ministry of Health"
+    },
+    {
+      "name": "Certified Specialty Pharmacist (CSP)"
+    },
+    {
+      "name": "Project Management Professional (PMP®) Certification",
+      "issuer": "In Progress"
+    },
+    {
+      "name": "Health Informatics Specialization",
+      "issuer": "Johns Hopkins University",
+      "url": "https://minasami.github.io/research/"
+    }
   ],
   "languages": [
-    {"language": "Arabic", "fluency": "Native"},
-    {"language": "English", "fluency": "Professional working proficiency"},
-    {"language": "French", "fluency": "Basic"}
-  ]
+    {
+      "language": "Arabic",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "French",
+      "fluency": "Limited working proficiency"
+    }
+  ],
+  "meta": {
+    "canonicalProfile": "https://minasami.github.io/",
+    "recruiterResources": "https://minasami.github.io/recruiter-resources/",
+    "leadership": "https://minasami.github.io/leadership/",
+    "research": "https://minasami.github.io/research/",
+    "publications": "https://minasami.github.io/publications/",
+    "accuracyNote": "Do not infer sole budget ownership or completed PMP certification. PMP status is In Progress."
+  }
 }
