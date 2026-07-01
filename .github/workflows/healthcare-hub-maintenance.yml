@@ -31,9 +31,12 @@ jobs:
           python-version: "3.12"
 
       - name: Audit hub and regenerate machine assets
+        id: audit
+        continue-on-error: true
         run: python scripts/healthcare_hub_maintenance.py --write
 
       - name: Commit refreshed sitemap and report
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,3 +55,9 @@ jobs:
           name: healthcare-hub-maintenance-report
           path: healthcare-transformation/reports/
           if-no-files-found: warn
+
+      - name: Enforce audit result
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo "Healthcare hub audit found broken internal links. Review the committed report."
+          exit 1
