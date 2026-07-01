@@ -1,0 +1,6 @@
+Healthcare Transformation Knowledge Hub
+Author: Mina Samy Tawfik Saad
+Home: https://minasami.github.io/healthcare-transformation/
+Topics: healthcare transformation, PMO, digital health, product delivery, change, adoption, data quality, AI governance, operations, benefits and implementation risk.
+Resources: https://minasami.github.io/healthcare-transformation/resources/
+Topic index: https://minasami.github.io/healthcare-transformation/topic-index/
