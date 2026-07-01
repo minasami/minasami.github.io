@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Healthcare Transformation &amp; Digital Health Knowledge Hub</title>
+<link href="https://minasami.github.io/healthcare-transformation/"/>
+<link href="https://minasami.github.io/healthcare-transformation/feed.xml" rel="self"/>
+<id>https://minasami.github.io/healthcare-transformation/</id>
+<updated>2026-07-01T00:00:00Z</updated>
+<author><name>Mina Samy Tawfik Saad</name><uri>https://minasami.github.io/</uri></author>
+<entry><title>Benefits Realization in Healthcare Transformation</title><link href="https://minasami.github.io/healthcare-transformation/benefits-realization/"/><id>https://minasami.github.io/healthcare-transformation/benefits-realization/</id><updated>2026-07-01T00:00:00Z</updated><summary>A practical method for connecting transformation delivery to measurable value.</summary></entry>
+<entry><title>AI Governance in Healthcare</title><link href="https://minasami.github.io/healthcare-transformation/ai-governance-in-healthcare/"/><id>https://minasami.github.io/healthcare-transformation/ai-governance-in-healthcare/</id><updated>2026-07-01T00:00:00Z</updated><summary>A practical framework for safe, accountable and measurable healthcare AI.</summary></entry>
+<entry><title>Change Management in Healthcare</title><link href="https://minasami.github.io/healthcare-transformation/change-management-in-healthcare/"/><id>https://minasami.github.io/healthcare-transformation/change-management-in-healthcare/</id><updated>2026-07-01T00:00:00Z</updated><summary>Readiness, stakeholder engagement, training, adoption and reinforcement.</summary></entry>
+<entry><title>Digital Health Roadmap Guide</title><link href="https://minasami.github.io/healthcare-transformation/digital-health-roadmap/"/><id>https://minasami.github.io/healthcare-transformation/digital-health-roadmap/</id><updated>2026-07-01T00:00:00Z</updated><summary>How to sequence outcomes, workflows, capabilities, platforms and adoption.</summary></entry>
+<entry><title>Healthcare PMO Guide</title><link href="https://minasami.github.io/healthcare-transformation/healthcare-pmo-guide/"/><id>https://minasami.github.io/healthcare-transformation/healthcare-pmo-guide/</id><updated>2026-07-01T00:00:00Z</updated><summary>Governance, prioritization, reporting, risks, adoption and benefits.</summary></entry>
+<entry><title>What Is Healthcare Transformation?</title><link href="https://minasami.github.io/healthcare-transformation/what-is-healthcare-transformation/"/><id>https://minasami.github.io/healthcare-transformation/what-is-healthcare-transformation/</id><updated>2026-07-01T00:00:00Z</updated><summary>A practical definition and delivery model for sustainable healthcare change.</summary></entry>
+</feed>
