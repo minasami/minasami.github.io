@@ -1,0 +1,54 @@
+name: Healthcare Hub Maintenance
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+  push:
+    branches: [master]
+    paths:
+      - "healthcare-transformation/**"
+      - "scripts/healthcare_hub_maintenance.py"
+      - ".github/workflows/healthcare-hub-maintenance.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: healthcare-hub-maintenance
+  cancel-in-progress: true
+
+jobs:
+  audit-and-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit hub and regenerate machine assets
+        run: python scripts/healthcare_hub_maintenance.py --write
+
+      - name: Commit refreshed sitemap and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add healthcare-transformation-sitemap-auto.xml healthcare-transformation/reports/
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "chore: refresh healthcare hub audit assets"
+            git push
+          fi
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: healthcare-hub-maintenance-report
+          path: healthcare-transformation/reports/
+          if-no-files-found: warn
