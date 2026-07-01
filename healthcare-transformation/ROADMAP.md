@@ -1,40 +1,50 @@
 # Healthcare Transformation & Digital Health Knowledge Hub Roadmap
 
-Published guides:
+## Published guides
 - What Is Healthcare Transformation?
 - Healthcare Transformation Framework
 - Healthcare PMO Guide
 - Digital Health Roadmap
 - Change Management in Healthcare
 - AI Governance in Healthcare
-- Benefits Realization in Healthcare Transformation
+- Benefits Realization
 - Stakeholder Mapping
 - Healthcare Journey Mapping
 - Healthcare Portfolio Prioritization
+- Healthcare Product Discovery
+- Healthcare Product Roadmaps
+- Healthcare Training Strategy
+- Healthcare Adoption Measurement
+- Implementation Risk
+- Healthcare Transformation Maturity Model
+- Change Fatigue
+- Healthcare Transformation Metrics
+- Healthcare Service Design
+- Executive Reporting
 
-Published platform assets:
+## Published platform assets
 - Topic index
 - Glossary
-- Dedicated sitemap
+- Resource library
+- Dedicated sitemaps
 - Atom feed
 - Portfolio prioritization template
 - Transformation charter template
 
-Next clusters:
-- PMO controls and executive reporting
+## Remaining priority clusters
+- PMO controls and dependency management
 - Digital health interoperability and architecture
-- Healthcare product management
+- Healthcare data governance and data quality
 - Healthcare operations and medicine access
-- Training, readiness and adoption measurement
-- AI use-case prioritization and model monitoring
-- Quality, privacy, cybersecurity and implementation risk
+- AI use-case prioritization and monitoring
+- Privacy, cybersecurity and quality management
 
-Platform priorities:
+## Platform priorities
 - Expand AI-readable files
-- Add breadcrumbs and related-article navigation
-- Add more templates, checklists and downloadable playbooks
+- Strengthen internal links
+- Add more templates and checklists
 - Track search, reading depth, downloads and contact conversions
 - Add review dates and editorial standards
 
-Quality standard:
-Every guide should include a definition, framework, implementation steps, common failure modes, useful measures, internal links and clear author attribution. Claims must remain evidence-based and avoid unsupported clinical, regulatory or legal conclusions.
+## Quality standard
+Every guide should include a definition, practical steps, common failure modes, useful measures, internal links and clear author attribution. Claims must remain evidence-based and avoid unsupported clinical, regulatory or legal conclusions.
