@@ -24,3 +24,4 @@ Allow: /
 
 Sitemap: https://minasami.github.io/sitemap.xml
 Sitemap: https://minasami.github.io/healthcare-transformation-sitemap.xml
+Sitemap: https://minasami.github.io/healthcare-transformation-sitemap-2.xml
