@@ -1,5 +1,9 @@
 # Mina Samy Tawfik Saad — Living CV
 
+[![Site Quality Checks](https://github.com/minasami/minasami.github.io/actions/workflows/site-quality.yml/badge.svg)](https://github.com/minasami/minasami.github.io/actions/workflows/site-quality.yml)
+[![Healthcare Hub Maintenance](https://github.com/minasami/minasami.github.io/actions/workflows/healthcare-hub-maintenance.yml/badge.svg)](https://github.com/minasami/minasami.github.io/actions/workflows/healthcare-hub-maintenance.yml)
+[![Site Link Check](https://github.com/minasami/minasami.github.io/actions/workflows/site-link-check.yml/badge.svg)](https://github.com/minasami/minasami.github.io/actions/workflows/site-link-check.yml)
+
 Personal portfolio, recruiter resource hub and digital-health case-study website for **Mina Samy Tawfik Saad**.
 
 Live site: https://minasami.github.io/
@@ -19,6 +23,9 @@ The site is designed for:
 ## Main sections
 
 - [Living CV](https://minasami.github.io/)
+- [Healthcare Transformation Knowledge Hub](https://minasami.github.io/healthcare-transformation/)
+- [Healthcare Topic Index](https://minasami.github.io/healthcare-transformation/topic-index/)
+- [Healthcare Resources](https://minasami.github.io/healthcare-transformation/resources/)
 - [Recruiter Quest](https://minasami.github.io/recruiter-game/)
 - [Recruiter Resources](https://minasami.github.io/recruiter-resources/)
 - [Projects](https://minasami.github.io/projects/)
@@ -33,14 +40,7 @@ The site is designed for:
 
 ## Recruiter experience
 
-The site now includes a gamified recruiter path:
-
-- Impact metrics
-- Flagship project proof
-- Transformation case study
-- Skills evidence
-- Role-fit CV generation
-- Contact and next-step actions
+The site includes a gamified recruiter path with impact metrics, flagship project proof, transformation case studies, skills evidence, role-fit CV generation and contact actions.
 
 Recruiter Quest:
 
@@ -50,8 +50,11 @@ https://minasami.github.io/recruiter-game/
 
 - [JSON Resume](https://minasami.github.io/resume.json)
 - [AI-readable profile](https://minasami.github.io/llms.txt)
+- [Healthcare AI index](https://minasami.github.io/healthcare-transformation/ai-index.txt)
 - [JSON publication feed](https://minasami.github.io/feed.json)
 - [Sitemap](https://minasami.github.io/sitemap.xml)
+- [Healthcare sitemap](https://minasami.github.io/healthcare-transformation-sitemap.xml)
+- [Supplemental healthcare sitemap](https://minasami.github.io/healthcare-transformation-sitemap-2.xml)
 - [Robots policy](https://minasami.github.io/robots.txt)
 - [Humans file](https://minasami.github.io/humans.txt)
 - [Security contact](https://minasami.github.io/.well-known/security.txt)
@@ -66,7 +69,18 @@ The website is intentionally lightweight and framework-free:
 - JSON-LD structured data
 - GitHub Pages hosting
 - Google Analytics 4
-- Automated HTML, link and Lighthouse checks through GitHub Actions
+- Automated HTML validation, link checks, healthcare-hub audits and Lighthouse checks through GitHub Actions
+
+## Automation and quality
+
+The repository includes:
+
+- `site-quality.yml` for HTML validation, live link checks and Lighthouse audits of the homepage and healthcare hub
+- `healthcare-hub-maintenance.yml` for scheduled internal-link audits, generated reports and automatic sitemap refreshes
+- `site-link-check.yml` for scheduled repository-wide link checking and maintenance issue creation
+- `scripts/healthcare_hub_maintenance.py` for repeatable local and CI quality checks
+
+The main quality workflow runs on pushes, pull requests, manual dispatch and every Sunday.
 
 ## Analytics
 
@@ -78,21 +92,19 @@ G-RWM4XN0FL5
 
 Tracked interactions include major project clicks, contact actions, recruiter-assistant usage, recruiter-profile printing and missing-page events.
 
-Privacy information is available at:
+Privacy information:
 
 https://minasami.github.io/privacy/
 
 ## Accessibility
 
-The site includes semantic structure, responsive layouts, reduced-motion support, keyboard-oriented navigation on the homepage and automated Lighthouse checks.
+The site includes semantic structure, responsive layouts, reduced-motion support, keyboard-oriented navigation and automated Lighthouse checks.
 
 Accessibility statement:
 
 https://minasami.github.io/accessibility/
 
 ## Local preview
-
-A simple local server is enough:
 
 ```bash
 python -m http.server 8000
@@ -104,19 +116,10 @@ Then open:
 http://localhost:8000
 ```
 
-## Quality checks
+## Local quality check
 
-The repository includes a GitHub Actions workflow that:
-
-- Validates HTML
-- Checks links
-- Runs Lighthouse
-- Uploads the Lighthouse report as an artifact
-
-Workflow file:
-
-```text
-.github/workflows/site-quality.yml
+```bash
+python scripts/healthcare_hub_maintenance.py
 ```
 
 ## Pull request workflow
@@ -125,33 +128,22 @@ Routine improvements should use a short-lived branch and pull request rather tha
 
 - Keep each pull request focused on one coherent improvement.
 - Include a clear summary and testing notes.
-- Let the automated site-quality checks complete.
-- Enable auto-merge so approved changes merge after required checks pass.
-- Continue using direct commits only for urgent fixes or simple administrative updates.
+- Let automated quality checks complete.
+- Enable auto-merge after required checks pass.
+- Use direct commits only for urgent fixes or simple administrative updates.
 
 ## Maintenance checklist
 
 Before publishing a significant change:
 
-- Confirm that professional claims are evidence-based
-- Keep PMP status written as **In Progress** until formally awarded
-- Check that all new pages are linked internally
-- Add important public pages to `sitemap.xml`
-- Verify mobile layout and keyboard navigation
-- Confirm that GA4 events do not capture sensitive information
-- Review privacy and accessibility statements after analytics or platform changes
-- Run the Site Quality Checks workflow and inspect the Lighthouse artifact
-
-## Content roadmap
-
-Planned high-value improvements include:
-
-- Additional project case studies with measurable outcomes
-- More practical publications on healthcare transformation and PMO governance
-- Better social-sharing preview graphics
-- Downloadable one-page project briefs
-- More visual workflow and architecture diagrams
-- Periodic review of recruiter-assistant answers and accuracy notes
+- Confirm professional claims are evidence-based.
+- Keep PMP status written as **In Progress** until formally awarded.
+- Check that new pages are linked internally.
+- Add important public pages to the appropriate sitemap.
+- Verify mobile layout and keyboard navigation.
+- Confirm GA4 events do not capture sensitive information.
+- Review privacy and accessibility statements after analytics or platform changes.
+- Run the Site Quality Checks workflow and inspect its artifacts.
 
 ## Accuracy notes
 
