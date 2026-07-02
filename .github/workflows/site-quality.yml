@@ -2,12 +2,12 @@ name: Site Quality Checks
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    branches:
-      - master
+    branches: [master]
   workflow_dispatch:
+  schedule:
+    - cron: "7 2 * * 0"
 
 permissions:
   contents: read
@@ -22,21 +22,37 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit healthcare hub internal links
+        run: python scripts/healthcare_hub_maintenance.py
 
       - name: Validate HTML files
         run: npx --yes html-validate@latest "**/*.html"
 
-      - name: Check website links
-        run: npx --yes linkinator@latest https://minasami.github.io/ --recurse --skip "medicine-support-hub--minasamitawfik.replit.app"
+      - name: Check published website links
+        run: npx --yes linkinator@latest https://minasami.github.io/ --recurse --skip "medicine-support-hub--minasamitawfik.replit.app|linkedin.com"
 
-      - name: Run Lighthouse audit
+      - name: Audit homepage
+        run: npx --yes lighthouse@latest https://minasami.github.io/ --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-home.json
+
+      - name: Audit healthcare hub
+        run: npx --yes lighthouse@latest https://minasami.github.io/healthcare-transformation/ --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-healthcare.json
+
+      - name: Enforce accessibility and SEO thresholds
         run: |
-          npx --yes lighthouse@latest https://minasami.github.io/ --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-home.json
-          node -e "const r=require('./lighthouse-home.json'); const c=r.categories; console.log({performance:c.performance.score,accessibility:c.accessibility.score,bestPractices:c['best-practices'].score,seo:c.seo.score}); if(c.accessibility.score<0.8||c.seo.score<0.8) process.exit(1);"
+          node -e "for(const f of ['lighthouse-home.json','lighthouse-healthcare.json']){const r=require('./'+f),c=r.categories;console.log(f,{performance:c.performance.score,accessibility:c.accessibility.score,bestPractices:c['best-practices'].score,seo:c.seo.score});if(c.accessibility.score<0.85||c.seo.score<0.85)process.exit(1)}"
 
-      - name: Upload Lighthouse report
+      - name: Upload Lighthouse reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: lighthouse-home-report
-          path: lighthouse-home.json
+          name: lighthouse-reports
+          path: |
+            lighthouse-home.json
+            lighthouse-healthcare.json
