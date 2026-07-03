@@ -1,66 +1,27 @@
 {
   "id": "/",
-  "name": "Mina Samy Tawfik Saad — Living CV",
+  "name": "Mina Samy Tawfik Saad — Digital Health & Healthcare Project Management",
   "short_name": "Mina Tawfik",
-  "description": "Project Management, PMO, Digital Health and Digital Transformation portfolio.",
+  "description": "Executive career portfolio covering digital health, healthcare project management, PMO, pharmacy operations and workflow transformation.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "background_color": "#071a2d",
   "theme_color": "#071a2d",
-  "categories": ["business", "productivity", "education"],
+  "categories": ["business", "medical", "productivity", "education"],
   "lang": "en",
   "dir": "ltr",
   "prefer_related_applications": false,
-  "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
-  "icons": [
-    {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ],
+  "launch_handler": {"client_mode": "navigate-existing"},
+  "icons": [{"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}],
   "shortcuts": [
-    {
-      "name": "Recruiter Quest",
-      "short_name": "Quest",
-      "description": "Open the gamified recruiter evidence journey.",
-      "url": "/recruiter-game/"
-    },
-    {
-      "name": "Recruiter Resources",
-      "short_name": "Recruiter",
-      "description": "Open Mina's recruiter-ready executive profile.",
-      "url": "/recruiter-resources/"
-    },
-    {
-      "name": "Medicine Support Hub",
-      "short_name": "Medicine Hub",
-      "description": "Open the flagship digital-health case study.",
-      "url": "/medicine-support-hub/"
-    },
-    {
-      "name": "Projects",
-      "short_name": "Projects",
-      "description": "Explore Mina's project portfolio.",
-      "url": "/projects/"
-    },
-    {
-      "name": "Insights",
-      "short_name": "Insights",
-      "description": "Open publications and professional insights.",
-      "url": "/publications/"
-    },
-    {
-      "name": "Contact Mina",
-      "short_name": "Contact",
-      "description": "Open contact options.",
-      "url": "/contact/"
-    }
+    {"name": "Executive Brief", "short_name": "Brief", "description": "Open Mina's concise executive profile.", "url": "/executive-brief/"},
+    {"name": "Digital Health Guide", "short_name": "Health Guide", "description": "Explore Mina's digital-health project-management framework.", "url": "/digital-health-project-management/"},
+    {"name": "Medicine Support Hub", "short_name": "Medicine Hub", "description": "Open the flagship digital-health case study.", "url": "/medicine-support-hub/"},
+    {"name": "Recruiter Resources", "short_name": "Recruiter", "description": "Open Mina's recruiter-ready resources.", "url": "/recruiter-resources/"},
+    {"name": "Projects", "short_name": "Projects", "description": "Explore Mina's evidence-backed project portfolio.", "url": "/projects/"},
+    {"name": "Contact Mina", "short_name": "Contact", "description": "Open direct contact options.", "url": "/contact/"}
   ]
 }
