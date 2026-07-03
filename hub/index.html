@@ -32,5 +32,6 @@ const items=[
 function runSearch(){const q=(document.getElementById('site-search').value||'').toLowerCase().trim();const box=document.getElementById('search-results');if(!q){box.classList.remove('active');box.innerHTML='';return}const matches=items.filter(i=>(i[0]+' '+i[1]).toLowerCase().includes(q)).slice(0,8);box.innerHTML=matches.length?matches.map(i=>'<a class="result span4" href="'+i[2]+'"><strong>'+i[0]+'</strong><span>'+i[1]+'</span></a>').join(''):'<div class="result span12"><strong>No exact match</strong><span>Try project, PMO, healthcare, recruiter, product or leadership.</span></div>';box.classList.add('active');if(typeof gtag==='function')gtag('event','professional_hub_search',{query:q,results:matches.length})}
 document.getElementById('site-search').addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
 </script>
+<script src="/assets/recruiter-assistant.js" defer></script>
 </body>
 </html>

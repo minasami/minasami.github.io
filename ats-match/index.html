@@ -39,5 +39,6 @@ function renderQuestions(best,missing){const base=[['Delivery','Walk me through 
 function resetResults(){document.getElementById('score').textContent='--%';document.getElementById('meter').style.width='0';document.getElementById('verdict').textContent='Paste a job description and run the analyzer.';document.getElementById('matched').innerHTML='<span class="pill">Waiting for analysis</span>';document.getElementById('gaps').innerHTML='<span class="pill">Waiting for analysis</span>';document.getElementById('lens').innerHTML='<span class="pill">Waiting for analysis</span>';document.getElementById('questions').innerHTML='<tr><td>Prompt</td><td>Run the analyzer to generate role-specific interview questions.</td></tr>'}
 function loadSample(type){document.getElementById('jd').value= type==='pmo'?'Lead project management specialist responsible for planning, PMO governance, stakeholder communication, risk management, project reviews, dashboards, P&L awareness and cross-functional delivery.':'Digital health project manager for healthcare operations, patient workflows, pharmacy coordination, analytics, clinical process improvement, stakeholder engagement and platform implementation.';analyzeJD()}
 </script>
+<script src="/assets/recruiter-assistant.js" defer></script>
 </body>
 </html>
