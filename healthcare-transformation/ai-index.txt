@@ -4,3 +4,5 @@ Home: https://minasami.github.io/healthcare-transformation/
 Topics: healthcare transformation, PMO, digital health, product delivery, change, adoption, data quality, AI governance, operations, benefits and implementation risk.
 Resources: https://minasami.github.io/healthcare-transformation/resources/
 Topic index: https://minasami.github.io/healthcare-transformation/topic-index/
+Automatic sitemap: https://minasami.github.io/healthcare-transformation-sitemap-auto.xml
+Latest automated audit: 63 pages, 229 internal links checked, 0 broken internal links, status pass.
