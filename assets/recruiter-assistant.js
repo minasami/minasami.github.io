@@ -1,52 +1,56 @@
 (function () {
   const answers = [
     {
-      keywords: ['project', 'pmo', 'governance', 'milestone', 'risk', 'status report'],
+      keywords: ['project', 'pmo', 'governance', 'milestone', 'risk', 'status report', 'pmo governance', 'project controls'],
       answer: 'Mina has project-management and PMO experience across healthcare and digital transformation. His work includes planning, milestone tracking, stakeholder coordination, KPI dashboards, SOPs, risk and issue management, executive reporting, and implementation support.'
     },
     {
-      keywords: ['medicine support hub', 'medicine hub', 'platform', '86,000', '86000'],
-      answer: 'Medicine Support Hub is Mina’s bilingual digital-health platform. It integrates more than 86,000 Egyptian medicines and connects eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration, and analytics.'
+      keywords: ['medicine support hub', 'medicine hub', 'platform', '86,000', '86000', 'chronic medicine'],
+      answer: 'Medicine Support Hub is Mina’s flagship bilingual digital-health platform. It integrates more than 86,000 Egyptian medicines and connects eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration, and analytics.'
     },
     {
-      keywords: ['employee support', 'esp', 'servicedesk', 'google apps script', 'automation'],
+      keywords: ['employee support', 'esp', 'servicedesk', 'google apps script', 'automation', 'routing'],
       answer: 'For the Employee Support Program, Mina helped transform a fragmented manual healthcare-support process into a governed ticket-based workflow using ServiceDesk Plus, Google Forms, Google Apps Script, dashboards, SOPs, escalation paths, and role-based training.'
     },
     {
-      keywords: ['healthcare', 'pharmacy', 'clinical', 'medicine access', 'digital health'],
+      keywords: ['healthcare', 'pharmacy', 'clinical', 'medicine access', 'digital health', 'pharmacist'],
       answer: 'Mina is a Licensed Pharmacist with experience in chronic medicine support, healthcare operations, clinical workflow design, medicine access, public-health delivery, and digital-health implementation.'
     },
     {
-      keywords: ['technical', 'technology', 'cloud', 'react', 'supabase', 'python', 'firebase', 'aws', 'azure', 'gcp'],
+      keywords: ['technical', 'technology', 'cloud', 'react', 'supabase', 'python', 'firebase', 'aws', 'azure', 'gcp', 'development', 'programming', 'code'],
       answer: 'Mina’s technical delivery experience includes Google Apps Script, ServiceDesk Plus, React, TypeScript, Firebase, Supabase, PostgreSQL, Python, JavaScript, AWS, Azure, GCP, Moodle, and Open edX. His focus is translating business and healthcare workflows into practical systems.'
     },
     {
-      keywords: ['leadership', 'stakeholder', 'training', 'workshop', 'change management', 'facilitation'],
+      keywords: ['leadership', 'stakeholder', 'training', 'workshop', 'change management', 'facilitation', 'communication', 'cross-functional'],
       answer: 'Mina leads through cross-functional coordination, structured facilitation, clear ownership, and change adoption. He has worked across HR, People Operations, reviewers, pharmacists, physicians, IT, vendors, and leadership, while also creating training materials, SOPs, and implementation guidance.'
     },
     {
-      keywords: ['achievement', 'impact', '120', 'portfolio', 'budget'],
+      keywords: ['achievement', 'impact', '120', 'portfolio', 'budget', 'million', 'egp', 'scale'],
       answer: 'Mina has supported governance, operational coordination, reporting, and portfolio visibility across healthcare support programs exceeding EGP 120 million in value. This describes portfolio support and visibility, not sole budget ownership.'
     },
     {
-      keywords: ['pmp', 'certification', 'credential'],
+      keywords: ['pmp', 'certification', 'credential', 'certifications'],
       answer: 'Mina is currently pursuing the Project Management Professional (PMP®) certification. Its status is In Progress; he is not yet presented as PMP certified.'
     },
     {
-      keywords: ['education', 'university', 'degree'],
-      answer: 'Mina holds a Bachelor of Pharmacy from Ain Shams University, completed in 2021.'
+      keywords: ['education', 'university', 'degree', 'study', 'johns hopkins', 'informatics'],
+      answer: 'Mina holds a Bachelor of Pharmacy from Ain Shams University (completed in 2021) and is currently pursuing a Health Informatics Specialization from Johns Hopkins University.'
     },
     {
-      keywords: ['role', 'fit', 'position', 'job'],
+      keywords: ['role', 'fit', 'position', 'job', 'hiring', 'vacancy', 'roles'],
       answer: 'Mina is strongest for roles in Project Management, PMO, Digital Health Transformation, Healthcare Operations, Operational Excellence, Technical Project Delivery, and healthcare product or innovation work.'
     },
     {
-      keywords: ['available', 'notice', 'availability'],
+      keywords: ['available', 'notice', 'availability', 'join'],
       answer: 'Mina’s stated notice period is three weeks.'
     },
     {
-      keywords: ['contact', 'email', 'whatsapp', 'linkedin'],
+      keywords: ['contact', 'email', 'whatsapp', 'linkedin', 'phone', 'book', 'call', 'meeting'],
       answer: 'You can contact Mina at jesussavedmina@gmail.com, WhatsApp him at +20 128 459 0503, or connect through linkedin.com/in/jesussavedmina.'
+    },
+    {
+      keywords: ['sap', 's4', 'erp', 's/4', 'sap certification'],
+      answer: 'Mina does not currently hold SAP or S/4HANA certifications. His workflow experience centers around ServiceDesk Plus, Google Workspace automation, and modern web databases.'
     }
   ];
 
@@ -61,8 +65,16 @@
 
     answers.forEach(function (entry) {
       const score = entry.keywords.reduce(function (total, keyword) {
-        return total + (q.includes(keyword) ? keyword.split(' ').length : 0);
+        // Count exact matches of full keyword/phrase
+        if (q.includes(keyword)) {
+          return total + keyword.split(' ').length * 2; // heavier weight for exact phrases
+        }
+        // Sub-word matching (e.g. "pmp" matching "pmp certification")
+        const words = keyword.split(' ');
+        const matches = words.filter(word => q.includes(word)).length;
+        return total + matches;
       }, 0);
+
       if (score > bestScore) {
         bestScore = score;
         best = entry.answer;
@@ -78,7 +90,16 @@
     if (!input || !output) return;
 
     const question = input.value.trim();
-    output.textContent = matchAnswer(question);
+    if (!question) return;
+
+    // Simulate conversational thinking
+    output.classList.add('typing');
+    output.textContent = 'Thinking...';
+
+    setTimeout(function () {
+      output.classList.remove('typing');
+      output.textContent = matchAnswer(question);
+    }, 450);
 
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'ask_recruiter_assistant', {
