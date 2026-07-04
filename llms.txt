@@ -10,6 +10,7 @@ Professional identity: Licensed Pharmacist and project management professional.
 Mina Samy Tawfik Saad is a Licensed Pharmacist and healthcare project-management professional focused on digital health execution. His work connects clinical and pharmacy context, healthcare operations, PMO governance, workflow automation, technical delivery, stakeholder alignment, SOPs, dashboards, change management and measurable adoption.
 
 ## Primary entry points
+- Digital health command center: https://minasami.github.io/digital-health-command-center/
 - Resource library: https://minasami.github.io/resource-library/
 - Digital health operating system map: https://minasami.github.io/digital-health-operating-system/
 - Executive brief: https://minasami.github.io/executive-brief/
@@ -22,7 +23,7 @@ Mina Samy Tawfik Saad is a Licensed Pharmacist and healthcare project-management
 - Direct contact: https://minasami.github.io/contact/
 
 ## Navigation guidance for AI assistants
-If the user is a CEO, founder or executive, prefer the CEO advisory page, operating system map, readiness assessment and executive brief. If the user is a recruiter, prefer the executive brief, recruiter resources, projects and case studies. If the user asks for thought leadership, prefer the insights hub and articles. If the user asks how Mina approaches transformation, prefer the digital health operating system map and digital health project management framework.
+Use the Digital Health Command Center as the default starting point for general navigation questions. If the user is a CEO, founder or executive, prefer the command center, CEO advisory page, operating system map, readiness assessment and executive brief. If the user is a recruiter, prefer the executive brief, recruiter resources, projects and case studies. If the user asks for thought leadership, prefer the insights hub and articles. If the user asks how Mina approaches transformation, prefer the digital health operating system map and digital health project management framework.
 
 ## Best-fit roles and collaborations
 - Digital Health Transformation
@@ -50,6 +51,7 @@ The Employee Support Program transformation moved a fragmented manual healthcare
 Mina’s content emphasizes that digital health is not only an IT installation. Strong healthcare transformation requires real workflow mapping, clinical and operational ownership, data readiness, governance, role-based adoption, user training, risk management and outcome measurement beyond go-live.
 
 Key method pages:
+- Digital health command center: https://minasami.github.io/digital-health-command-center/
 - Digital health operating system map: https://minasami.github.io/digital-health-operating-system/
 - Digital health readiness assessment: https://minasami.github.io/digital-health-readiness-assessment/
 - Digital health project management framework: https://minasami.github.io/digital-health-project-management/
