@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Mina Samy Tawfik Saad — Digital Health & Healthcare Project Management",
+  "name": "Mina Samy Tawfik Saad — Digital Health Experience",
   "short_name": "Mina Tawfik",
-  "description": "Executive career portfolio covering digital health, healthcare project management, PMO, pharmacy operations and workflow transformation.",
+  "description": "Digital health career platform with healthcare project management insights, CEO advisory, readiness assessment, PMO resources and evidence-backed case studies.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -17,11 +17,11 @@
   "launch_handler": {"client_mode": "navigate-existing"},
   "icons": [{"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}],
   "shortcuts": [
+    {"name": "Readiness Assessment", "short_name": "Assessment", "description": "Score a digital-health project for readiness and adoption risk.", "url": "/digital-health-readiness-assessment/"},
+    {"name": "CEO Advisory", "short_name": "Advisory", "description": "Open the CEO-facing digital-health advisory page.", "url": "/ceo-digital-health-advisory/"},
+    {"name": "Insights Hub", "short_name": "Insights", "description": "Read practical digital-health and healthcare PMO insights.", "url": "/insights/"},
     {"name": "Executive Brief", "short_name": "Brief", "description": "Open Mina's concise executive profile.", "url": "/executive-brief/"},
-    {"name": "Digital Health Guide", "short_name": "Health Guide", "description": "Explore Mina's digital-health project-management framework.", "url": "/digital-health-project-management/"},
-    {"name": "Medicine Support Hub", "short_name": "Medicine Hub", "description": "Open the flagship digital-health case study.", "url": "/medicine-support-hub/"},
-    {"name": "Recruiter Resources", "short_name": "Recruiter", "description": "Open Mina's recruiter-ready resources.", "url": "/recruiter-resources/"},
-    {"name": "Projects", "short_name": "Projects", "description": "Explore Mina's evidence-backed project portfolio.", "url": "/projects/"},
-    {"name": "Contact Mina", "short_name": "Contact", "description": "Open direct contact options.", "url": "/contact/"}
+    {"name": "Digital Health Guide", "short_name": "Guide", "description": "Explore Mina's digital-health project-management framework.", "url": "/digital-health-project-management/"},
+    {"name": "Medicine Support Hub", "short_name": "Medicine Hub", "description": "Open the flagship digital-health case study.", "url": "/medicine-support-hub/"}
   ]
 }

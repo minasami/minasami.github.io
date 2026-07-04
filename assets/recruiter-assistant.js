@@ -2,105 +2,43 @@
   'use strict';
 
   const answers = [
-    {
-      keywords: ['project', 'pmo', 'governance', 'milestone', 'risk', 'status report', 'project controls', 'program management'],
-      answer: 'Mina brings project-management and PMO experience across healthcare and digital transformation. His work includes planning, milestone tracking, stakeholder coordination, KPI dashboards, SOPs, risk and issue management, executive reporting, implementation support, and change adoption.'
-    },
-    {
-      keywords: ['digital health', 'health informatics', 'healthcare transformation', 'clinical workflow', 'patient journey', 'health technology'],
-      answer: 'Mina works at the intersection of healthcare operations, pharmacy knowledge, project delivery, and technology. He translates real healthcare workflows into governed digital services with clear ownership, controls, reporting, and adoption plans.'
-    },
-    {
-      keywords: ['medicine support hub', 'medicine hub', 'platform', '86,000', '86000', 'chronic medicine'],
-      answer: 'Medicine Support Hub is Mina’s flagship bilingual digital-health platform. It integrates more than 86,000 Egyptian medicines and connects eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration, and analytics.'
-    },
-    {
-      keywords: ['employee support', 'esp', 'servicedesk', 'google apps script', 'automation', 'routing'],
-      answer: 'For the Employee Support Program, Mina helped transform a fragmented manual healthcare-support process into a governed ticket-based workflow using ServiceDesk Plus, Google Forms, Google Apps Script, dashboards, SOPs, escalation paths, and role-based training.'
-    },
-    {
-      keywords: ['healthcare', 'pharmacy', 'clinical', 'medicine access', 'pharmacist'],
-      answer: 'Mina is a Licensed Pharmacist with experience in chronic medicine support, healthcare operations, clinical workflow design, medicine access, public-health delivery, and digital-health implementation.'
-    },
-    {
-      keywords: ['technical', 'technology', 'cloud', 'react', 'supabase', 'python', 'firebase', 'aws', 'azure', 'gcp', 'development', 'programming', 'code'],
-      answer: 'Mina’s technical delivery experience includes Google Apps Script, ServiceDesk Plus, React, TypeScript, Firebase, Supabase, PostgreSQL, Python, JavaScript, AWS, Azure, GCP, Moodle, and Open edX. His strength is translating healthcare and business requirements into practical systems.'
-    },
-    {
-      keywords: ['leadership', 'stakeholder', 'training', 'workshop', 'change management', 'facilitation', 'communication', 'cross-functional'],
-      answer: 'Mina leads through cross-functional coordination, structured facilitation, clear ownership, and change adoption. He has worked across HR, People Operations, reviewers, pharmacists, physicians, IT, vendors, and leadership while creating training materials, SOPs, and implementation guidance.'
-    },
-    {
-      keywords: ['achievement', 'impact', '120', 'portfolio', 'budget', 'million', 'egp', 'scale'],
-      answer: 'Mina has supported governance, operational coordination, reporting, and portfolio visibility across healthcare support programs exceeding EGP 120 million in value. This describes portfolio support and visibility, not sole budget ownership.'
-    },
-    {
-      keywords: ['pmp', 'certification', 'credential', 'certifications'],
-      answer: 'Mina is currently pursuing the Project Management Professional (PMP®) certification. Its status is In Progress; he is not yet presented as PMP certified.'
-    },
-    {
-      keywords: ['education', 'university', 'degree', 'study', 'johns hopkins', 'informatics'],
-      answer: 'Mina holds a Bachelor of Pharmacy from Ain Shams University, completed in 2021, and is pursuing further learning in health informatics and project management.'
-    },
-    {
-      keywords: ['role', 'fit', 'position', 'job', 'hiring', 'vacancy', 'roles', 'ceo', 'founder'],
-      answer: 'Mina is strongest for roles and collaborations in Digital Health Transformation, Healthcare Project or Program Management, PMO, Healthcare Operations, Operational Excellence, Technical Project Delivery, and healthcare product or innovation work.'
-    },
-    {
-      keywords: ['available', 'notice', 'availability', 'join'],
-      answer: 'Mina’s stated notice period is three weeks. Contact him directly to confirm current availability.'
-    },
-    {
-      keywords: ['contact', 'email', 'whatsapp', 'linkedin', 'phone', 'book', 'call', 'meeting', 'invite'],
-      answer: 'You can contact Mina at jesussavedmina@gmail.com, WhatsApp him at +20 128 459 0503, or connect through linkedin.com/in/jesussavedmina.'
-    }
+    { keywords: ['project', 'pmo', 'governance', 'milestone', 'risk', 'status report', 'project controls', 'program management'], answer: 'Mina brings project-management and PMO experience across healthcare and digital transformation. His work includes planning, milestone tracking, stakeholder coordination, KPI dashboards, SOPs, risk and issue management, executive reporting, implementation support and change adoption.' },
+    { keywords: ['digital health', 'health informatics', 'healthcare transformation', 'clinical workflow', 'patient journey', 'health technology'], answer: 'Mina works at the intersection of healthcare operations, pharmacy knowledge, project delivery and technology. He translates real healthcare workflows into governed digital services with clear ownership, controls, reporting, adoption plans and outcome measures.' },
+    { keywords: ['ceo', 'founder', 'advisory', 'executive', 'strategy', 'transformation leader'], answer: 'For CEOs and founders, Mina is useful when digital-health strategy must become an operating model: workflow mapping, governance, PMO rhythm, stakeholder alignment, adoption planning, KPI dashboards and post-launch sustainment. Start with the CEO Digital Health Advisory page or Executive Brief.' },
+    { keywords: ['insight', 'article', 'thought leadership', 'publication', 'blog'], answer: 'Mina publishes practical insights on digital health execution, healthcare PMO, clinical workflow design, technology adoption and why healthcare projects fail after go-live. Open /insights/ to see the content hub.' },
+    { keywords: ['readiness', 'assessment', 'score', 'diagnostic', 'maturity'], answer: 'Use Mina’s Digital Health Readiness Assessment to score a project across workflow clarity, ownership, data readiness, adoption, risk and value measurement. It gives a practical readiness tier and recommended next steps.' },
+    { keywords: ['medicine support hub', 'medicine hub', 'platform', '86,000', '86000', 'chronic medicine'], answer: 'Medicine Support Hub is Mina’s flagship bilingual digital-health platform. It integrates more than 86,000 Egyptian medicines and connects eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration and analytics.' },
+    { keywords: ['employee support', 'esp', 'servicedesk', 'google apps script', 'automation', 'routing'], answer: 'For the Employee Support Program, Mina helped transform a fragmented manual healthcare-support process into a governed ticket-based workflow using ServiceDesk Plus, Google Forms, Google Apps Script, dashboards, SOPs, escalation paths and role-based training.' },
+    { keywords: ['healthcare', 'pharmacy', 'clinical', 'medicine access', 'pharmacist'], answer: 'Mina is a Licensed Pharmacist with experience in chronic medicine support, healthcare operations, clinical workflow design, medicine access, public-health delivery and digital-health implementation.' },
+    { keywords: ['technical', 'technology', 'cloud', 'react', 'supabase', 'python', 'firebase', 'aws', 'azure', 'gcp', 'development', 'programming', 'code'], answer: 'Mina’s technical delivery experience includes Google Apps Script, ServiceDesk Plus, React, TypeScript, Firebase, Supabase, PostgreSQL, Python, JavaScript, AWS, Azure, GCP, Moodle and Open edX. His strength is translating healthcare and business requirements into practical systems.' },
+    { keywords: ['leadership', 'stakeholder', 'training', 'workshop', 'change management', 'facilitation', 'communication', 'cross-functional'], answer: 'Mina leads through cross-functional coordination, structured facilitation, clear ownership and change adoption. He has worked across HR, People Operations, reviewers, pharmacists, physicians, IT, vendors and leadership while creating training materials, SOPs and implementation guidance.' },
+    { keywords: ['achievement', 'impact', '120', 'portfolio', 'budget', 'million', 'egp', 'scale'], answer: 'Mina has supported governance, operational coordination, reporting and portfolio visibility across healthcare support programs exceeding EGP 120 million in value. This describes portfolio support and visibility, not sole budget ownership.' },
+    { keywords: ['pmp', 'certification', 'credential', 'certifications'], answer: 'Mina is currently pursuing the Project Management Professional (PMP®) certification. Its status is In Progress; he is not yet presented as PMP certified.' },
+    { keywords: ['education', 'university', 'degree', 'study', 'johns hopkins', 'informatics'], answer: 'Mina holds a Bachelor of Pharmacy from Ain Shams University, completed in 2021, and is pursuing further learning in health informatics and project management.' },
+    { keywords: ['role', 'fit', 'position', 'job', 'hiring', 'vacancy', 'roles'], answer: 'Mina is strongest for roles and collaborations in Digital Health Transformation, Healthcare Project or Program Management, PMO, Healthcare Operations, Operational Excellence, Technical Project Delivery and healthcare product or innovation work.' },
+    { keywords: ['available', 'notice', 'availability', 'join'], answer: 'Mina’s stated notice period is three weeks. Contact him directly to confirm current availability.' },
+    { keywords: ['contact', 'email', 'whatsapp', 'linkedin', 'phone', 'book', 'call', 'meeting', 'invite'], answer: 'You can contact Mina at jesussavedmina@gmail.com, WhatsApp him at +20 128 459 0503, or connect through linkedin.com/in/jesussavedmina.' }
   ];
 
-  function normalize(text) {
-    return String(text || '').toLowerCase().replace(/[^a-z0-9+.,@\s-]/g, ' ').replace(/\s+/g, ' ').trim();
-  }
-
+  function normalize(text) { return String(text || '').toLowerCase().replace(/[^a-z0-9+.,@\s-]/g, ' ').replace(/\s+/g, ' ').trim(); }
   function matchAnswer(question) {
     const q = normalize(question);
-    let best = null;
-    let bestScore = 0;
-
+    let best = null, bestScore = 0;
     answers.forEach(function (entry) {
       const score = entry.keywords.reduce(function (total, keyword) {
         if (q.includes(keyword)) return total + keyword.split(' ').length * 2;
         return total + keyword.split(' ').filter(function (word) { return q.includes(word); }).length;
       }, 0);
-      if (score > bestScore) {
-        bestScore = score;
-        best = entry.answer;
-      }
+      if (score > bestScore) { bestScore = score; best = entry.answer; }
     });
-
-    return best || 'I can answer verified questions about Mina’s digital-health work, PMO experience, healthcare projects, leadership, credentials, role fit, availability, and contact details.';
+    return best || 'I can answer verified questions about Mina’s digital-health work, CEO advisory value, insights, PMO experience, healthcare projects, leadership, credentials, role fit, availability and contact details.';
   }
 
   function injectStyles() {
     if (document.getElementById('recruiter-assistant-styles')) return;
     const style = document.createElement('style');
     style.id = 'recruiter-assistant-styles';
-    style.textContent = `
-      .recruiter-assistant{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-      .recruiter-assistant__toggle{width:58px;height:58px;border:0;border-radius:50%;cursor:pointer;background:#0f766e;color:#fff;font-size:24px;box-shadow:0 12px 30px rgba(15,23,42,.25);display:grid;place-items:center}
-      .recruiter-assistant__toggle:hover{transform:translateY(-2px)}
-      .recruiter-assistant__panel{position:absolute;right:0;bottom:72px;width:min(390px,calc(100vw - 28px));max-height:min(650px,calc(100vh - 120px));overflow:auto;background:var(--surface,#fff);color:var(--text,#172033);border:1px solid rgba(100,116,139,.25);border-radius:20px;padding:20px;box-shadow:0 24px 70px rgba(15,23,42,.24);display:none}
-      .recruiter-assistant__panel.open{display:block;animation:ra-in .18s ease-out}
-      .recruiter-assistant__header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
-      .recruiter-assistant__header h2{font-size:1.05rem;margin:0}.recruiter-assistant__header p{font-size:.82rem;margin:.25rem 0 0;color:#64748b}
-      .recruiter-assistant__close{border:0;background:transparent;font-size:20px;cursor:pointer;color:inherit}
-      .recruiter-assistant__input{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:12px;padding:12px 13px;font:inherit;background:transparent;color:inherit}
-      .recruiter-assistant__quick{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0}
-      .recruiter-assistant__quick button{border:1px solid #99f6e4;background:rgba(204,251,241,.45);color:#115e59;border-radius:999px;padding:7px 10px;font-size:.78rem;cursor:pointer}
-      .recruiter-assistant__answer{background:rgba(241,245,249,.8);border-radius:13px;padding:13px;font-size:.9rem;line-height:1.55;min-height:68px}
-      [data-theme="dark"] .recruiter-assistant__panel{background:#111827;color:#e5e7eb;border-color:#334155}
-      [data-theme="dark"] .recruiter-assistant__answer{background:#1e293b}[data-theme="dark"] .recruiter-assistant__quick button{background:#134e4a;color:#ccfbf1;border-color:#0f766e}
-      @keyframes ra-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-      @media(max-width:600px){.recruiter-assistant{right:14px;bottom:14px}.recruiter-assistant__panel{bottom:68px}}
-    `;
+    style.textContent = `.recruiter-assistant{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.recruiter-assistant__toggle{width:58px;height:58px;border:0;border-radius:50%;cursor:pointer;background:#0f766e;color:#fff;font-size:24px;box-shadow:0 12px 30px rgba(15,23,42,.25);display:grid;place-items:center}.recruiter-assistant__toggle:hover{transform:translateY(-2px)}.recruiter-assistant__panel{position:absolute;right:0;bottom:72px;width:min(410px,calc(100vw - 28px));max-height:min(680px,calc(100vh - 120px));overflow:auto;background:var(--surface,#fff);color:var(--text,#172033);border:1px solid rgba(100,116,139,.25);border-radius:20px;padding:20px;box-shadow:0 24px 70px rgba(15,23,42,.24);display:none}.recruiter-assistant__panel.open{display:block;animation:ra-in .18s ease-out}.recruiter-assistant__header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}.recruiter-assistant__header h2{font-size:1.05rem;margin:0}.recruiter-assistant__header p{font-size:.82rem;margin:.25rem 0 0;color:#64748b}.recruiter-assistant__close{border:0;background:transparent;font-size:20px;cursor:pointer;color:inherit}.recruiter-assistant__input{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:12px;padding:12px 13px;font:inherit;background:transparent;color:inherit}.recruiter-assistant__quick{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0}.recruiter-assistant__quick button{border:1px solid #99f6e4;background:rgba(204,251,241,.45);color:#115e59;border-radius:999px;padding:7px 10px;font-size:.78rem;cursor:pointer}.recruiter-assistant__answer{background:rgba(241,245,249,.8);border-radius:13px;padding:13px;font-size:.9rem;line-height:1.55;min-height:76px}[data-theme="dark"] .recruiter-assistant__panel{background:#111827;color:#e5e7eb;border-color:#334155}[data-theme="dark"] .recruiter-assistant__answer{background:#1e293b}[data-theme="dark"] .recruiter-assistant__quick button{background:#134e4a;color:#ccfbf1;border-color:#0f766e}@keyframes ra-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media(max-width:600px){.recruiter-assistant{right:14px;bottom:14px}.recruiter-assistant__panel{bottom:68px}}`;
     document.head.appendChild(style);
   }
 
@@ -109,60 +47,18 @@
     injectStyles();
     const wrapper = document.createElement('div');
     wrapper.className = 'recruiter-assistant';
-    wrapper.innerHTML = `
-      <section class="recruiter-assistant__panel" id="recruiter-assistant-panel" role="dialog" aria-modal="false" aria-label="Recruiter Assistant">
-        <div class="recruiter-assistant__header"><div><h2>Recruiter Assistant</h2><p>Verified answers about Mina’s experience and fit.</p></div><button class="recruiter-assistant__close" type="button" aria-label="Close assistant">×</button></div>
-        <input class="recruiter-assistant__input" id="recruiter-question" type="text" placeholder="What digital-health experience does Mina have?" aria-label="Ask about Mina's experience">
-        <div class="recruiter-assistant__quick">
-          <button type="button" data-question="digital health experience">Digital health</button>
-          <button type="button" data-question="project management and PMO experience">PMO</button>
-          <button type="button" data-question="Medicine Support Hub">Flagship platform</button>
-          <button type="button" data-question="best-fit roles">Role fit</button>
-          <button type="button" data-question="contact and meeting">Contact</button>
-        </div>
-        <div class="recruiter-assistant__answer" id="recruiter-answer" aria-live="polite">Ask about digital health, healthcare project management, PMO, projects, leadership, role fit, or contact details.</div>
-      </section>
-      <button class="recruiter-assistant__toggle" type="button" aria-expanded="false" aria-controls="recruiter-assistant-panel" aria-label="Open Recruiter Assistant">💬</button>`;
+    wrapper.innerHTML = `<section class="recruiter-assistant__panel" id="recruiter-assistant-panel" role="dialog" aria-modal="false" aria-label="Recruiter Assistant"><div class="recruiter-assistant__header"><div><h2>Recruiter Assistant</h2><p>Verified answers about Mina’s experience and fit.</p></div><button class="recruiter-assistant__close" type="button" aria-label="Close assistant">×</button></div><input class="recruiter-assistant__input" id="recruiter-question" type="text" placeholder="What digital-health experience does Mina have?" aria-label="Ask about Mina's experience"><div class="recruiter-assistant__quick"><button type="button" data-question="CEO advisory">CEO advisory</button><button type="button" data-question="digital health experience">Digital health</button><button type="button" data-question="project management and PMO experience">PMO</button><button type="button" data-question="digital health readiness assessment">Readiness</button><button type="button" data-question="insights and articles">Insights</button><button type="button" data-question="contact and meeting">Contact</button></div><div class="recruiter-assistant__answer" id="recruiter-answer" aria-live="polite">Ask about digital health, CEO advisory, PMO, projects, insights, readiness, leadership, role fit or contact details.</div></section><button class="recruiter-assistant__toggle" type="button" aria-expanded="false" aria-controls="recruiter-assistant-panel" aria-label="Open Recruiter Assistant">💬</button>`;
     document.body.appendChild(wrapper);
-
-    const panel = wrapper.querySelector('.recruiter-assistant__panel');
-    const toggle = wrapper.querySelector('.recruiter-assistant__toggle');
-    const close = wrapper.querySelector('.recruiter-assistant__close');
-    const input = wrapper.querySelector('.recruiter-assistant__input');
-    const output = wrapper.querySelector('.recruiter-assistant__answer');
-
-    function setOpen(open) {
-      panel.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', String(open));
-      if (open) input.focus();
-    }
-    function ask(question) {
-      const value = String(question || input.value).trim();
-      if (!value) return;
-      input.value = value;
-      output.textContent = 'Thinking…';
-      window.setTimeout(function () { output.textContent = matchAnswer(value); }, 220);
-      if (typeof window.gtag === 'function') window.gtag('event', 'ask_recruiter_assistant', { question_category: normalize(value).slice(0, 80), page_location: location.href });
-    }
-
+    const panel = wrapper.querySelector('.recruiter-assistant__panel'), toggle = wrapper.querySelector('.recruiter-assistant__toggle'), close = wrapper.querySelector('.recruiter-assistant__close'), input = wrapper.querySelector('.recruiter-assistant__input'), output = wrapper.querySelector('.recruiter-assistant__answer');
+    function setOpen(open) { panel.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); if (open) input.focus(); }
+    function ask(question) { const value = String(question || input.value).trim(); if (!value) return; input.value = value; output.textContent = 'Thinking…'; window.setTimeout(function () { output.textContent = matchAnswer(value); }, 220); if (typeof window.gtag === 'function') window.gtag('event', 'ask_recruiter_assistant', { question_category: normalize(value).slice(0, 80), page_location: location.href }); }
     toggle.addEventListener('click', function () { setOpen(!panel.classList.contains('open')); });
     close.addEventListener('click', function () { setOpen(false); });
     input.addEventListener('keydown', function (event) { if (event.key === 'Enter') ask(); if (event.key === 'Escape') setOpen(false); });
     wrapper.querySelectorAll('[data-question]').forEach(function (button) { button.addEventListener('click', function () { ask(button.dataset.question); }); });
   }
 
-  window.askAssistant = function () {
-    const input = document.getElementById('question');
-    const output = document.getElementById('answer');
-    if (!input || !output || !input.value.trim()) return;
-    output.textContent = 'Thinking…';
-    window.setTimeout(function () { output.textContent = matchAnswer(input.value); }, 220);
-  };
-  window.preset = function (text) {
-    const input = document.getElementById('question');
-    if (input) { input.value = text; window.askAssistant(); }
-  };
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', injectWidget);
-  else injectWidget();
+  window.askAssistant = function () { const input = document.getElementById('question'); const output = document.getElementById('answer'); if (!input || !output || !input.value.trim()) return; output.textContent = 'Thinking…'; window.setTimeout(function () { output.textContent = matchAnswer(input.value); }, 220); };
+  window.preset = function (text) { const input = document.getElementById('question'); if (input) { input.value = text; window.askAssistant(); } };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', injectWidget); else injectWidget();
 })();
