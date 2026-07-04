@@ -1,4 +1,4 @@
-name: Install Recruiter Assistant Site-wide
+name: Install Career Brand Enhancements Site-wide
 
 on:
   workflow_dispatch:
@@ -7,6 +7,8 @@ on:
     paths:
       - '.github/workflows/install-recruiter-assistant.yml'
       - 'assets/recruiter-assistant.js'
+      - 'assets/site-enhancements.js'
+      - 'assets/site-enhancements.css'
 
 permissions:
   contents: write
@@ -17,25 +19,49 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Add Recruiter Assistant to every HTML page
+      - name: Add optimization assets to every HTML page
         run: |
           python - <<'PY'
           from pathlib import Path
 
-          script_tag = '<script src="/assets/recruiter-assistant.js" defer></script>'
+          assistant = '<script src="/assets/recruiter-assistant.js" defer></script>'
+          enhancements = '<script src="/assets/site-enhancements.js" defer></script>'
+          styles = '<link rel="stylesheet" href="/assets/site-enhancements.css">'
           changed = []
 
           for path in Path('.').rglob('*.html'):
               if '.git' in path.parts:
                   continue
               html = path.read_text(encoding='utf-8')
-              if script_tag in html:
-                  continue
-              if '</body>' not in html:
-                  continue
-              html = html.replace('</body>', f'{script_tag}\n</body>', 1)
-              path.write_text(html, encoding='utf-8')
-              changed.append(str(path))
+              original = html
+
+              if styles not in html and '</head>' in html:
+                  html = html.replace('</head>', f'{styles}\n</head>', 1)
+              if enhancements not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{enhancements}\n</body>', 1)
+              if assistant not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{assistant}\n</body>', 1)
+
+              if path == Path('index.html'):
+                  html = html.replace(
+                      '<a href="#impact">Impact</a>',
+                      '<a href="#impact">Impact</a><a href="/digital-health-project-management/">Digital Health Guide</a><a href="/executive-brief/">Executive Brief</a>',
+                      1
+                  )
+                  html = html.replace(
+                      '<a class="btn primary" href="#living-cv">Explore Living CV</a>',
+                      '<a class="btn primary" href="/executive-brief/">View Executive Brief</a>',
+                      1
+                  )
+                  html = html.replace(
+                      '<a class="btn teal" href="#projects">View Projects</a>',
+                      '<a class="btn teal" href="/digital-health-project-management/">Digital Health Framework</a>',
+                      1
+                  )
+
+              if html != original:
+                  path.write_text(html, encoding='utf-8')
+                  changed.append(str(path))
 
           print(f'Updated {len(changed)} page(s):')
           for item in changed:
@@ -49,7 +75,7 @@ jobs:
             exit 0
           fi
           git config user.name "github-actions[bot]"
-          git config user.email "4189826+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add '**/*.html' '*.html'
-          git commit -m "Install Recruiter Assistant across all pages"
+          git commit -m "Apply performance, accessibility and conversion enhancements site-wide"
           git push
