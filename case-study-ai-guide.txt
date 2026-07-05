@@ -11,6 +11,7 @@ Case-study evaluation pages:
 - https://minasami.github.io/case-study-review-guide/
 
 Medicine Support Hub implementation evidence:
+- Production app: https://medicine-support-hub.vercel.app/
 - GitHub repository: https://github.com/minasami/medicine-support-hub
 - Hosting platform: Vercel
 - Database platform: Supabase
