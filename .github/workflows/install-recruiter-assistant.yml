@@ -14,6 +14,7 @@ on:
       - 'assets/homepage-priority-router.js'
       - 'assets/roadmap-integration.js'
       - 'assets/case-study-proof-router.js'
+      - 'assets/medicine-support-hub-deployment.js'
 
 permissions:
   contents: write
@@ -35,6 +36,7 @@ jobs:
           growth = '<script src="/assets/growth-navigation.js" defer></script>'
           roadmap = '<script src="/assets/roadmap-integration.js" defer></script>'
           caseproof = '<script src="/assets/case-study-proof-router.js" defer></script>'
+          mshdeploy = '<script src="/assets/medicine-support-hub-deployment.js" defer></script>'
           homepage = '<script src="/assets/homepage-priority-router.js" defer></script>'
           styles = '<link rel="stylesheet" href="/assets/site-enhancements.css">'
           changed = []
@@ -57,6 +59,8 @@ jobs:
                   html = html.replace('</body>', f'{roadmap}\n</body>', 1)
               if caseproof not in html and '</body>' in html:
                   html = html.replace('</body>', f'{caseproof}\n</body>', 1)
+              if mshdeploy not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{mshdeploy}\n</body>', 1)
               if path == Path('index.html') and homepage not in html and '</body>' in html:
                   html = html.replace('</body>', f'{homepage}\n</body>', 1)
               if assistant not in html and '</body>' in html:
