@@ -34,6 +34,8 @@ IMPORTANT_PAGES = [
     '/linkedin-content-engine/',
     '/share/',
     '/quality-trust-audit/',
+    '/site-quality-gates/',
+    '/site-quality-runbook/',
 ]
 
 
