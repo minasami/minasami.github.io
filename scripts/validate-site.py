@@ -24,6 +24,7 @@ IMPORTANT_PAGES = [
     '/',
     '/digital-health-command-center/',
     '/site-growth-control-center/',
+    '/platform-roadmap/',
     '/career-intelligence-dashboard/',
     '/proof-room/',
     '/claims-registry/',
