@@ -4,6 +4,7 @@ Medicine Support Hub is now represented as a more complete production-style digi
 
 ## Current implementation signals
 
+- Production app URL: https://medicine-support-hub.vercel.app/
 - GitHub repository: `minasami/medicine-support-hub`
 - Hosting platform: Vercel
 - Database platform: Supabase
@@ -14,7 +15,7 @@ Medicine Support Hub is now represented as a more complete production-style digi
 
 Use wording like:
 
-> Medicine Support Hub is a GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform for medicine support workflows.
+> Medicine Support Hub is a GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform for medicine support workflows, accessible at https://medicine-support-hub.vercel.app/.
 
 Avoid wording like:
 
@@ -27,6 +28,7 @@ unless separate evidence is added.
 This improves the case study because it shows:
 
 - real source-code ownership
+- public Vercel deployment
 - deployment maturity beyond a prototype link
 - cloud hosting workflow
 - database-backed architecture
