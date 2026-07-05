@@ -12,6 +12,7 @@ on:
       - 'assets/experience-router.js'
       - 'assets/growth-navigation.js'
       - 'assets/homepage-priority-router.js'
+      - 'assets/roadmap-integration.js'
 
 permissions:
   contents: write
@@ -31,6 +32,7 @@ jobs:
           enhancements = '<script src="/assets/site-enhancements.js" defer></script>'
           router = '<script src="/assets/experience-router.js" defer></script>'
           growth = '<script src="/assets/growth-navigation.js" defer></script>'
+          roadmap = '<script src="/assets/roadmap-integration.js" defer></script>'
           homepage = '<script src="/assets/homepage-priority-router.js" defer></script>'
           styles = '<link rel="stylesheet" href="/assets/site-enhancements.css">'
           changed = []
@@ -49,6 +51,8 @@ jobs:
                   html = html.replace('</body>', f'{router}\n</body>', 1)
               if growth not in html and '</body>' in html:
                   html = html.replace('</body>', f'{growth}\n</body>', 1)
+              if roadmap not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{roadmap}\n</body>', 1)
               if path == Path('index.html') and homepage not in html and '</body>' in html:
                   html = html.replace('</body>', f'{homepage}\n</body>', 1)
               if assistant not in html and '</body>' in html:
