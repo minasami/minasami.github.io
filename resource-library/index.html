@@ -51,4 +51,5 @@
 <script>document.querySelectorAll('[data-filter]').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');var f=btn.dataset.filter;document.querySelectorAll('[data-audience]').forEach(function(card){card.style.display=(f==='all'||card.dataset.audience.includes(f))?'flex':'none'});if(window.gtag)gtag('event','resource_filter',{filter:f});});});</script>
 <script src="/assets/experience-router.js" defer></script>
 <script src="/assets/growth-navigation.js" defer></script>
+<script src="/assets/roadmap-integration.js" defer></script>
 </body></html>
