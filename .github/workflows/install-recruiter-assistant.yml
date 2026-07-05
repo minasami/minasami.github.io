@@ -15,6 +15,8 @@ on:
       - 'assets/roadmap-integration.js'
       - 'assets/case-study-proof-router.js'
       - 'assets/medicine-support-hub-deployment.js'
+      - 'assets/readiness-sector-benchmark.js'
+      - 'assets/readiness-visual-profile.js'
 
 permissions:
   contents: write
@@ -37,6 +39,8 @@ jobs:
           roadmap = '<script src="/assets/roadmap-integration.js" defer></script>'
           caseproof = '<script src="/assets/case-study-proof-router.js" defer></script>'
           mshdeploy = '<script src="/assets/medicine-support-hub-deployment.js" defer></script>'
+          readiness_benchmark = '<script src="/assets/readiness-sector-benchmark.js" defer></script>'
+          readiness_visual = '<script src="/assets/readiness-visual-profile.js" defer></script>'
           homepage = '<script src="/assets/homepage-priority-router.js" defer></script>'
           styles = '<link rel="stylesheet" href="/assets/site-enhancements.css">'
           changed = []
@@ -61,6 +65,10 @@ jobs:
                   html = html.replace('</body>', f'{caseproof}\n</body>', 1)
               if mshdeploy not in html and '</body>' in html:
                   html = html.replace('</body>', f'{mshdeploy}\n</body>', 1)
+              if path == Path('digital-health-readiness-assessment/index.html') and readiness_benchmark not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{readiness_benchmark}\n</body>', 1)
+              if path == Path('digital-health-readiness-assessment/index.html') and readiness_visual not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{readiness_visual}\n</body>', 1)
               if path == Path('index.html') and homepage not in html and '</body>' in html:
                   html = html.replace('</body>', f'{homepage}\n</body>', 1)
               if assistant not in html and '</body>' in html:
