@@ -1,6 +1,6 @@
 # Digital Health Readiness Assessment Upgrade
 
-The readiness assessment is being upgraded from a simple scoring tool into an executive decision-support diagnostic.
+The readiness assessment is upgraded from a simple scoring tool into an executive decision-support diagnostic.
 
 ## New capabilities
 
