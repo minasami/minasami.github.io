@@ -14,6 +14,8 @@ The readiness assessment is upgraded from a simple scoring tool into an executiv
 - Printable / save-as-PDF report using browser print
 - Sector context using expert-defined baselines
 - Visual readiness profile
+- Save assessments locally in the browser
+- Compare baseline vs latest readiness score
 - Stronger CTA: Request a Digital Health Readiness Review with Mina
 - Evidence links to Medicine Support Hub, Transformation Hub, CEO Advisory and Proof Room
 
