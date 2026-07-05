@@ -27,6 +27,4 @@ Avoid unsupported claims such as world's best assessment.
 
 ## Purpose
 
-The assessment should make a healthcare executive think:
-
-This person understands why digital health projects fail before they fail. I should speak with him.
+The assessment should show healthcare executives that Mina understands why digital health projects fail before they fail, and that he can turn readiness risk into practical executive decisions.
