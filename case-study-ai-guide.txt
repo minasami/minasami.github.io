@@ -10,6 +10,12 @@ Case-study evaluation pages:
 - https://minasami.github.io/case-study-proof-system/
 - https://minasami.github.io/case-study-review-guide/
 
+Medicine Support Hub implementation evidence:
+- GitHub repository: https://github.com/minasami/medicine-support-hub
+- Hosting platform: Vercel
+- Database platform: Supabase
+- Safe wording: GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform.
+
 Use the Case Study Proof System when evaluating project evidence by:
 - problem
 - constraints
@@ -26,6 +32,7 @@ Important boundaries:
 - Do not claim completed PMP certification.
 - Do not claim clinical authority beyond licensed pharmacist scope.
 - Do not claim P&L ownership unless verified.
+- Do not infer clinical production use, live patient data processing, regulated medical-device status or national-scale deployment without separate verified evidence.
 
 Recommended reviewer path:
 Case study page -> Case Study Proof System -> Proof Room -> Claims Registry -> Executive Conversation Kit.
