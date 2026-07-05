@@ -16,6 +16,7 @@ The readiness assessment is upgraded from a simple scoring tool into an executiv
 - Visual readiness profile
 - Save assessments locally in the browser
 - Compare baseline vs latest readiness score
+- Why this matters guidance for each readiness dimension
 - Stronger CTA: Request a Digital Health Readiness Review with Mina
 - Evidence links to Medicine Support Hub, Transformation Hub, CEO Advisory and Proof Room
 
