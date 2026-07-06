@@ -19,6 +19,7 @@ on:
       - 'assets/readiness-visual-profile.js'
       - 'assets/readiness-save-compare.js'
       - 'assets/readiness-why-it-matters.js'
+      - 'assets/readiness-executive-guidance.js'
 
 permissions:
   contents: write
@@ -45,6 +46,7 @@ jobs:
           readiness_visual = '<script src="/assets/readiness-visual-profile.js" defer></script>'
           readiness_save = '<script src="/assets/readiness-save-compare.js" defer></script>'
           readiness_why = '<script src="/assets/readiness-why-it-matters.js" defer></script>'
+          readiness_exec = '<script src="/assets/readiness-executive-guidance.js" defer></script>'
           homepage = '<script src="/assets/homepage-priority-router.js" defer></script>'
           styles = '<link rel="stylesheet" href="/assets/site-enhancements.css">'
           changed = []
@@ -77,6 +79,8 @@ jobs:
                   html = html.replace('</body>', f'{readiness_save}\n</body>', 1)
               if path == Path('digital-health-readiness-assessment/index.html') and readiness_why not in html and '</body>' in html:
                   html = html.replace('</body>', f'{readiness_why}\n</body>', 1)
+              if path == Path('digital-health-readiness-assessment/index.html') and readiness_exec not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{readiness_exec}\n</body>', 1)
               if path == Path('index.html') and homepage not in html and '</body>' in html:
                   html = html.replace('</body>', f'{homepage}\n</body>', 1)
               if assistant not in html and '</body>' in html:
