@@ -12,7 +12,8 @@
     ['benefits', 'Review the Benefits Tracker', '/benefits-realization-tracker/', 'Learn how to prove value after go-live.'],
     ['proof', 'Visit the Proof Room', '/proof-room/', 'Check evidence and claim boundaries.'],
     ['msh', 'Explore Medicine Support Hub', '/medicine-support-hub/', 'See a real digital-health platform case study.'],
-    ['gallery', 'Inspect the Evidence Gallery', '/medicine-support-hub-evidence-gallery/', 'Review safe product evidence from Medicine Support Hub screenshots.']
+    ['gallery', 'Inspect the Evidence Gallery', '/medicine-support-hub-evidence-gallery/', 'Review safe product evidence from Medicine Support Hub screenshots.'],
+    ['techproof', 'Open the Technical Proof Checkpoint', '/technical-proof-checkpoint/', 'Connect live app, GitHub, Vercel, Supabase and proof boundaries.']
   ];
 
   function state() {
@@ -38,6 +39,7 @@
   }
 
   function badge(done) {
+    if (done >= 8) return 'Technical Evidence Strategist';
     if (done >= 7) return 'Evidence Strategist';
     if (done >= 6) return 'Transformation Strategist';
     if (done >= 4) return 'Governance Builder';
