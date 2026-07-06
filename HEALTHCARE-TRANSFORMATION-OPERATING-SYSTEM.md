@@ -24,6 +24,7 @@ Implemented or partially implemented:
 - Visual readiness profile
 - Save and compare assessments
 - Executive guidance by dimension
+- Digital Health Decision Journal
 - Proof Room
 - Claims Registry
 - Medicine Support Hub case study
@@ -35,7 +36,6 @@ Do not position this as the world's best assessment. Position it as an evidence-
 
 ## Next maturity steps
 
-- Decision Journal
 - 90-day implementation playbook
 - Governance stage-gate toolkit
 - Benefits realization tracker
