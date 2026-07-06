@@ -13,7 +13,8 @@
     ['proof', 'Visit the Proof Room', '/proof-room/', 'Check evidence and claim boundaries.'],
     ['msh', 'Explore Medicine Support Hub', '/medicine-support-hub/', 'See a real digital-health platform case study.'],
     ['gallery', 'Inspect the Evidence Gallery', '/medicine-support-hub-evidence-gallery/', 'Review safe product evidence from Medicine Support Hub screenshots.'],
-    ['techproof', 'Open the Technical Proof Checkpoint', '/technical-proof-checkpoint/', 'Connect live app, GitHub, Vercel, Supabase and proof boundaries.']
+    ['techproof', 'Open the Technical Proof Checkpoint', '/technical-proof-checkpoint/', 'Connect live app, GitHub, Vercel, Supabase and proof boundaries.'],
+    ['trail', 'Follow the Proof Review Trail', '/proof-review-trail/', 'Review the full evidence path in the right order.']
   ];
 
   function state() {
@@ -39,6 +40,7 @@
   }
 
   function badge(done) {
+    if (done >= 9) return 'Proof Trail Master';
     if (done >= 8) return 'Technical Evidence Strategist';
     if (done >= 7) return 'Evidence Strategist';
     if (done >= 6) return 'Transformation Strategist';
