@@ -26,6 +26,7 @@ Implemented or partially implemented:
 - Executive guidance by dimension
 - Digital Health Decision Journal
 - 90-day Implementation Playbook
+- Benefits Realization Tracker
 - Proof Room
 - Claims Registry
 - Medicine Support Hub case study
@@ -38,5 +39,4 @@ Do not position this as the world's best assessment. Position it as an evidence-
 ## Next maturity steps
 
 - Governance stage-gate toolkit
-- Benefits realization tracker
 - More evidence-centered case studies
