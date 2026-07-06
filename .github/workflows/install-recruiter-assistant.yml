@@ -21,6 +21,7 @@ on:
       - 'assets/readiness-why-it-matters.js'
       - 'assets/readiness-executive-guidance.js'
       - 'assets/learning-quest.js'
+      - 'assets/knowledge-check.js'
 
 permissions:
   contents: write
@@ -44,6 +45,7 @@ jobs:
           caseproof = '<script src="/assets/case-study-proof-router.js" defer></script>'
           mshdeploy = '<script src="/assets/medicine-support-hub-deployment.js" defer></script>'
           learning = '<script src="/assets/learning-quest.js" defer></script>'
+          knowledge = '<script src="/assets/knowledge-check.js" defer></script>'
           readiness_benchmark = '<script src="/assets/readiness-sector-benchmark.js" defer></script>'
           readiness_visual = '<script src="/assets/readiness-visual-profile.js" defer></script>'
           readiness_save = '<script src="/assets/readiness-save-compare.js" defer></script>'
@@ -75,6 +77,8 @@ jobs:
                   html = html.replace('</body>', f'{mshdeploy}\n</body>', 1)
               if learning not in html and '</body>' in html:
                   html = html.replace('</body>', f'{learning}\n</body>', 1)
+              if knowledge not in html and '</body>' in html:
+                  html = html.replace('</body>', f'{knowledge}\n</body>', 1)
               if path == Path('digital-health-readiness-assessment/index.html') and readiness_benchmark not in html and '</body>' in html:
                   html = html.replace('</body>', f'{readiness_benchmark}\n</body>', 1)
               if path == Path('digital-health-readiness-assessment/index.html') and readiness_visual not in html and '</body>' in html:
