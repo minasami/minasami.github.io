@@ -15,6 +15,16 @@ Make the platform easier and more enjoyable to explore while keeping the content
 - Inspect proof
 - Study Medicine Support Hub
 
+## Role-based routes
+
+Different visitors can start from the most relevant path:
+
+- CEO: readiness and decision quality
+- PMO leader: governance gates and 90-day execution
+- Product owner: workflows, adoption and benefits feedback
+- Recruiter: proof, case studies and technical delivery
+- Investor: talent, proof and platform maturity
+
 ## Design rule
 
 The platform should feel interactive, helpful and memorable, not childish. Gamification exists to support learning, navigation and trust.
