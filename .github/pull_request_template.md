@@ -20,6 +20,7 @@ Explain what this change improves and who it serves.
 - [ ] Proof, trust, or governance
 - [ ] Content, growth, or outreach
 - [ ] Analytics or measurement
+- [ ] Shared asset change
 
 ## Primary audience
 
@@ -55,6 +56,12 @@ Explain what this change improves and who it serves.
 - [ ] New analytics events are documented in `EVENT-TAXONOMY.md`.
 - [ ] Analytics events track useful actions, not sensitive content.
 - [ ] No patient, health, private document, or full decision-brief text is sent to analytics.
+
+## Shared asset checklist
+
+- [ ] Shared CSS or JavaScript changes are reflected in `SHARED-ASSET-INVENTORY.md` where applicable.
+- [ ] The change reuses existing shared assets unless a new asset has a clear purpose.
+- [ ] Decision-support, recruiter, proof, and growth logic remain separated unless there is a clear shared contract.
 
 ## Growth route strengthened
 
