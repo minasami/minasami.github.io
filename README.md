@@ -20,9 +20,22 @@ The site is designed for:
 - Project, PMO and operational-excellence teams
 - Search engines, résumé parsers and AI systems
 
+## Current platform architecture
+
+The site has grown from a portfolio into a lightweight decision-support platform. Its primary flow is:
+
+1. [Decision Navigator](https://minasami.github.io/decision-navigator/) — choose the right next step for a healthcare transformation decision.
+2. Decision Brief — summarize the initiative, sponsor, risk, evidence and next action.
+3. [Readiness Assessment](https://minasami.github.io/digital-health-readiness-assessment/) — test the decision against sponsorship, workflow, data, ownership, adoption, governance and value.
+4. Executive Readiness Brief — print or save the assessment result for leadership review.
+5. [Proof Room](https://minasami.github.io/proof-room/) or [Contact](https://minasami.github.io/contact/) — verify evidence or start a serious conversation.
+
 ## Main sections
 
 - [Living CV](https://minasami.github.io/)
+- [Digital Health Command Center](https://minasami.github.io/digital-health-command-center/)
+- [Decision Navigator](https://minasami.github.io/decision-navigator/)
+- [Executive Digital Health Readiness Assessment](https://minasami.github.io/digital-health-readiness-assessment/)
 - [Healthcare Transformation Knowledge Hub](https://minasami.github.io/healthcare-transformation/)
 - [Healthcare Topic Index](https://minasami.github.io/healthcare-transformation/topic-index/)
 - [Healthcare Resources](https://minasami.github.io/healthcare-transformation/resources/)
@@ -51,6 +64,7 @@ https://minasami.github.io/recruiter-game/
 - [JSON Resume](https://minasami.github.io/resume.json)
 - [AI-readable profile](https://minasami.github.io/llms.txt)
 - [Healthcare AI index](https://minasami.github.io/healthcare-transformation/ai-index.txt)
+- [AI Navigation Guide](https://github.com/minasami/minasami.github.io/blob/master/AI-NAVIGATION-GUIDE.md)
 - [JSON publication feed](https://minasami.github.io/feed.json)
 - [Sitemap](https://minasami.github.io/sitemap.xml)
 - [Healthcare sitemap](https://minasami.github.io/healthcare-transformation-sitemap.xml)
@@ -69,18 +83,32 @@ The website is intentionally lightweight and framework-free:
 - JSON-LD structured data
 - GitHub Pages hosting
 - Google Analytics 4
-- Automated HTML validation, link checks, healthcare-hub audits and Lighthouse checks through GitHub Actions
+- Automated HTML validation, link checks, healthcare-hub audits, decision-route checks and Lighthouse checks through GitHub Actions
 
 ## Automation and quality
 
 The repository includes:
 
 - `site-quality.yml` for HTML validation, live link checks and Lighthouse audits of the homepage and healthcare hub
+- `validate-site.yml` for repository-level metadata, route, sitemap and decision-route validation
 - `healthcare-hub-maintenance.yml` for scheduled internal-link audits, generated reports and automatic sitemap refreshes
-- `site-link-check.yml` for scheduled repository-wide link checking and maintenance issue creation
-- `scripts/healthcare_hub_maintenance.py` for repeatable local and CI quality checks
+- `site-link-check.yml` for scheduled repository-wide link checking with blocking internal-route checks and advisory external-link checks
+- `scripts/validate-site.py` for repeatable repository quality validation
+- `scripts/check_links.py` for internal route checking
+- `scripts/healthcare_hub_maintenance.py` for repeatable local and CI healthcare-hub quality checks
 
-The main quality workflow runs on pushes, pull requests, manual dispatch and every Sunday.
+The main quality workflows run on pushes, pull requests and manual dispatch. Some workflows also run on a schedule.
+
+## Engineering mode
+
+Before changing code:
+
+1. Read the existing file.
+2. Search for similar functionality.
+3. Check related scripts, styles, routes and shared components.
+4. Make the smallest safe change.
+5. Preserve existing behavior unless the change intentionally updates it.
+6. Prefer improving an existing route over adding another page.
 
 ## Analytics
 
@@ -90,7 +118,7 @@ Google Analytics 4 measurement ID:
 G-RWM4XN0FL5
 ```
 
-Tracked interactions include major project clicks, contact actions, recruiter-assistant usage, recruiter-profile printing and missing-page events.
+Tracked interactions include major project clicks, contact actions, recruiter-assistant usage, recruiter-profile printing, readiness interactions, decision-brief generation and missing-page events.
 
 Privacy information:
 
@@ -119,6 +147,8 @@ http://localhost:8000
 ## Local quality check
 
 ```bash
+python scripts/validate-site.py
+python scripts/check_links.py
 python scripts/healthcare_hub_maintenance.py
 ```
 
@@ -139,6 +169,7 @@ Before publishing a significant change:
 - Confirm professional claims are evidence-based.
 - Keep PMP status written as **In Progress** until formally awarded.
 - Check that new pages are linked internally.
+- Preserve the Decision Navigator to Readiness Assessment handoff.
 - Add important public pages to the appropriate sitemap.
 - Verify mobile layout and keyboard navigation.
 - Confirm GA4 events do not capture sensitive information.
