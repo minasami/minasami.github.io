@@ -14,13 +14,16 @@ Do not send personal health information, patient details, private document text 
 
 ### Decision support
 
+- `open_decision_navigator` — visitor opens the Decision Navigator route.
 - `decision_brief_generate` — visitor generates a Decision Brief.
 - `decision_brief_print` — visitor prints or saves the Decision Brief.
+- `open_readiness_assessment` — visitor opens the Readiness Assessment route.
 - `readiness_assessment_update` — visitor adjusts the readiness diagnostic.
 - `readiness_report_print` — visitor prints or saves the Executive Readiness Brief.
 
 ### Proof and trust
 
+- `open_proof_room` — visitor opens the Proof Room route.
 - `open_medicine_support_hub` — visitor opens the Medicine Support Hub case or live product route.
 - `view_projects` — visitor opens projects or project sections.
 - `view_research` — visitor opens research content.
