@@ -12,11 +12,24 @@ Every change should improve at least one of these outcomes:
 4. Convert attention into serious conversations.
 5. Improve growth, outreach, or site governance.
 
+## Engineering mode
+
+Before changing code, use engineering mode:
+
+1. Read the existing file first.
+2. Search for similar functionality before adding new code.
+3. Check related scripts, styles, routes, and shared components.
+4. Make the smallest safe change.
+5. Preserve existing behavior unless the change intentionally updates it.
+6. Prefer improving an existing route over adding another page.
+7. Document quality, proof, or routing decisions when the change affects platform governance.
+
 ## Main page families
 
 ### Entry and navigation
 
-- `/digital-health-command-center/` — default starting point.
+- `/decision-navigator/` — decision-first route for healthcare transformation questions.
+- `/digital-health-command-center/` — broad platform starting point.
 - `/resource-library/` — role-based navigation.
 - `/site-growth-control-center/` — weekly growth rhythm.
 
@@ -76,9 +89,10 @@ Use the Claims Registry and Proof Room when changing public wording. Keep creden
 
 Do not send every visitor everywhere. Route by audience:
 
+- Decision-maker with an unclear next step: Decision Navigator.
 - General audience: Command Center.
 - Recruiter: Executive Brief, then Proof Room.
-- CEO or founder: CEO Advisory, then Readiness Assessment.
+- CEO or founder: Decision Navigator, CEO Advisory, then Readiness Assessment.
 - PMO leader: Operating System, then PMO KPI article.
 - Skeptical reviewer: Proof Room and Claims Registry.
 - Mina's weekly execution: Site Growth Control Center.
