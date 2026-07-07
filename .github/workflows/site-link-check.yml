@@ -9,6 +9,7 @@ on:
     paths:
       - "**/*.html"
       - "**/*.md"
+      - "scripts/check_links.py"
       - ".github/workflows/site-link-check.yml"
 
 permissions:
@@ -21,20 +22,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check repository links
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check internal repository links
+        run: python scripts/check_links.py
+
+      - name: Check external links
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --no-progress
             --exclude-mail
+            --exclude "^/"
             --exclude "linkedin.com"
             --exclude "localhost"
+            --exclude "wa.me"
             "**/*.html"
             "**/*.md"
           fail: true
 
-      - name: Create or update link-check issue
+      - name: Create link-check issue
         if: failure()
         uses: peter-evans/create-issue-from-file@v5
         with:
