@@ -22,6 +22,7 @@ jobs:
           test -f decision-navigator/index.html
           test -f digital-health-readiness-assessment/index.html
           test -f assets/decision-brief-bridge.js
+          test -f assets/readiness-assessment.js
           grep -F '/assets/decision-brief-bridge.js' decision-navigator/index.html
           grep -F '/assets/decision-brief-bridge.js' digital-health-readiness-assessment/index.html
           grep -F 'data-decision-brief-context' digital-health-readiness-assessment/index.html
