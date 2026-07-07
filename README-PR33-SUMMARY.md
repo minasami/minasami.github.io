@@ -22,6 +22,14 @@ This branch adds a stronger proof, trust and executive-readiness layer to the ca
 - Dimension-by-dimension breakdown
 - Critical weakness detection
 - Funding / pilot / scale / repair / redesign verdict
+- Save and compare assessments locally
+- Why-this-matters guidance for readiness dimensions
+- First-value section for busy healthcare leaders
+- Adoption reality section addressing clinical and executive engagement friction
+
+## Feedback loop
+
+After external feedback highlighted that busy healthcare stakeholders may not engage unless value is immediately obvious, the assessment page was refined to state the time required, expected output and decision value before asking users to start.
 
 ## Positioning
 
