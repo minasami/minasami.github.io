@@ -30,6 +30,8 @@ The site has grown from a portfolio into a lightweight decision-support platform
 4. Executive Readiness Brief — print or save the assessment result for leadership review.
 5. [Proof Room](https://minasami.github.io/proof-room/) or [Contact](https://minasami.github.io/contact/) — verify evidence or start a serious conversation.
 
+Architecture map: [`ARCHITECTURE.md`](ARCHITECTURE.md)
+
 ## Main sections
 
 - [Living CV](https://minasami.github.io/)
