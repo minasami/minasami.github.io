@@ -19,6 +19,7 @@ Explain what this change improves and who it serves.
 - [ ] Navigation or routing
 - [ ] Proof, trust, or governance
 - [ ] Content, growth, or outreach
+- [ ] Analytics or measurement
 
 ## Primary audience
 
@@ -48,6 +49,12 @@ Explain what this change improves and who it serves.
 - [ ] Credential status is current.
 - [ ] Role scope is not overstated.
 - [ ] The page does not create confusion between positioning, proof, and outreach.
+
+## Analytics and privacy checklist
+
+- [ ] New analytics events are documented in `EVENT-TAXONOMY.md`.
+- [ ] Analytics events track useful actions, not sensitive content.
+- [ ] No patient, health, private document, or full decision-brief text is sent to analytics.
 
 ## Growth route strengthened
 
