@@ -17,6 +17,8 @@ The readiness assessment is upgraded from a simple scoring tool into an executiv
 - Save assessments locally in the browser
 - Compare baseline vs latest readiness score
 - Why this matters guidance for each readiness dimension
+- First-value section for busy leaders
+- Adoption reality section focused on clinical and executive engagement
 - Stronger CTA: Request a Digital Health Readiness Review with Mina
 - Evidence links to Medicine Support Hub, Transformation Hub, CEO Advisory and Proof Room
 
@@ -27,6 +29,18 @@ Use this wording:
 An executive diagnostic for digital health transformation that helps leaders determine whether an initiative is ready to fund, pilot, scale, repair or redesign.
 
 Avoid unsupported claims such as world's best assessment.
+
+## Feedback-driven iteration
+
+External professional feedback highlighted that the hardest part is not only building a good healthtech tool, but getting busy clinical and executive stakeholders to see enough value to engage.
+
+The page was updated to respond to that adoption challenge by making the first-value promise visible before the assessment:
+
+- Time required: 5-10 minutes
+- Output: Executive Readiness Brief
+- Decision language: fund, pilot, scale, repair or redesign
+- Report utility: print or save for leadership and PMO conversations
+- Adoption risk: clinical buyer engagement and workflow adoption are treated as explicit transformation risks
 
 ## Purpose
 
