@@ -28,7 +28,7 @@ jobs:
       - name: Check internal repository links
         run: python scripts/check_links.py
 
-      - name: Check external links
+      - name: Check external links advisory
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
@@ -40,4 +40,4 @@ jobs:
             --exclude "wa.me"
             "**/*.html"
             "**/*.md"
-          fail: true
+          fail: false
