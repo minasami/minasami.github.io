@@ -16,6 +16,10 @@ Use `/digital-health-command-center/` when a visitor wants a broad overview of t
 - Role fit needed: `/executive-brief/` or `/recruiter-resources/`
 - Healthcare product proof needed: `/medicine-support-hub/`
 
+## Flow rule
+
+Keep the main tool path connected across navigator, assessment, proof and contact routes.
+
 ## Positioning rule
 
 Describe the site as a practical healthcare transformation decision-support platform and evidence-backed portfolio. Do not describe it as the best website on earth. The goal is usefulness, clarity, trust, and decision quality.
