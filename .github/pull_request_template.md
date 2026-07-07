@@ -2,6 +2,14 @@
 
 Explain what this change improves and who it serves.
 
+## Engineering mode pre-check
+
+- [ ] I read the existing file before changing it.
+- [ ] I searched for similar functionality to avoid duplication.
+- [ ] I checked related scripts, styles, routes, and shared components.
+- [ ] I made the smallest safe change instead of rewriting unrelated code.
+- [ ] I preserved existing behavior unless this PR intentionally changes it.
+
 ## Change type
 
 - [ ] New public page
@@ -46,7 +54,7 @@ Explain what this change improves and who it serves.
 - [ ] Attention: Command Center
 - [ ] Trust: Proof Room / Claims Registry
 - [ ] Conversation: Executive Conversation Kit / Contact
-- [ ] Decision: Career Intelligence Dashboard
+- [ ] Decision: Career Intelligence Dashboard / Decision Navigator
 - [ ] Distribution: LinkedIn Content Engine / Share Hub
 - [ ] Direct growth: Outreach Command System
 - [ ] Governance: Quality Audit / Quality Gates / Runbook
