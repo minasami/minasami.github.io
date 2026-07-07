@@ -17,3 +17,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run site validation
         run: python scripts/validate-site.py
+      - name: Check decision routes
+        run: |
+          test -f decision-navigator/index.html
+          test -f digital-health-readiness-assessment/index.html
+          test -f assets/decision-brief-bridge.js
+          grep -F '/assets/decision-brief-bridge.js' decision-navigator/index.html
+          grep -F '/assets/decision-brief-bridge.js' digital-health-readiness-assessment/index.html
+          grep -F 'data-decision-brief-context' digital-health-readiness-assessment/index.html
