@@ -10,6 +10,7 @@ Last reviewed: 2026-07-07
 - New duplicate automated link-check issue creation has been removed from the workflow.
 - Engineering mode is documented in `CONTRIBUTING.md`, the PR template and the public Site Quality Runbook.
 - The Decision Navigator, saved Decision Brief and Readiness Assessment handoff are now part of the quality model.
+- Validate Site Quality now checks that the Readiness Assessment script exists as part of decision-route validation.
 
 ## Manual cleanup
 
@@ -22,4 +23,4 @@ Older duplicate automated-check issues can be closed manually after the updated 
 3. Confirm no new duplicate automated-check issues are created.
 4. Close older duplicate automated-check issues.
 5. Run Validate Site Quality and confirm the Decision Navigator and Readiness Assessment routes pass.
-6. Add a focused validator check for decision-tool continuity when connector constraints allow safe script updates.
+6. Keep strengthening decision-tool continuity checks in small safe workflow updates.
