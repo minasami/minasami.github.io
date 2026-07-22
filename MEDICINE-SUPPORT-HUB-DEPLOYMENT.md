@@ -4,7 +4,7 @@ Medicine Support Hub is now represented as a more complete production-style digi
 
 ## Current implementation signals
 
-- Production app URL: https://medicinesupport.app/ (also accessible at https://medicine-support-hub.vercel.app/)
+- Production app URL: https://medicinesupport.app/medicines (also accessible at https://medicine-support-hub.vercel.app/)
 - GitHub repository: `minasami/medicine-support-hub`
 - Hosting platform: Vercel
 - Custom Domain: `medicinesupport.app`
@@ -16,7 +16,7 @@ Medicine Support Hub is now represented as a more complete production-style digi
 
 Use wording like:
 
-> Medicine Support Hub is a GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform for medicine support workflows, accessible at https://medicinesupport.app/.
+> Medicine Support Hub is a GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform for medicine support workflows, accessible at https://medicinesupport.app/medicines.
 
 Avoid wording like:
 
