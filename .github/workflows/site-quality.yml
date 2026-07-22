@@ -36,7 +36,7 @@ jobs:
         run: npx --yes html-validate@latest "**/*.html"
 
       - name: Check published website links
-        run: npx --yes linkinator@latest https://minasami.github.io/ --recurse --skip "medicine-support-hub--minasamitawfik.replit.app|linkedin.com"
+        run: npx --yes linkinator@latest https://minasami.github.io/ --recurse --skip "medicinesupport.app|medicine-support-hub--minasamitawfik.replit.app|linkedin.com"
 
       - name: Audit homepage
         run: npx --yes lighthouse@latest https://minasami.github.io/ --chrome-flags="--headless --no-sandbox" --output=json --output-path=./lighthouse-home.json

@@ -95,9 +95,9 @@
   "projects": [
     {
       "name": "Medicine Support Hub",
-      "description": "Bilingual digital-health workflow platform with more than 86,000 Egyptian medicines and eight clinical and operational roles.",
-      "url": "https://minasami.github.io/medicine-support-hub/",
-      "keywords": ["Digital Health", "Project Management", "Workflow Automation", "RBAC", "Analytics", "Pharmacy Operations"]
+      "description": "Bilingual digital-health platform live at medicinesupport.app. Architected and led end-to-end by Mina Samy Tawfik Saad, integrating 86,000+ Egyptian medicines across 8 role-based workflows with a vision to standardize chronic healthcare delivery for NGOs and PSPs.",
+      "url": "https://medicinesupport.app/",
+      "keywords": ["Digital Health", "Project Management", "Workflow Automation", "RBAC", "Analytics", "Pharmacy Operations", "Supabase", "React"]
     },
     {
       "name": "Employee Support Program Transformation",

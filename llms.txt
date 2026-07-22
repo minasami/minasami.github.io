@@ -45,8 +45,8 @@ For public summaries, prefer the Claims Registry. Avoid claiming direct P&L owne
 
 ## Flagship project: Medicine Support Hub
 Case study: https://minasami.github.io/medicine-support-hub/
-Live platform: https://medicine-support-hub--minasamitawfik.replit.app/
-Medicine Support Hub is a bilingual digital health operations platform for chronic medicines support. It integrates more than 86,000 Egyptian medicines and supports eight role-based workflows covering request intake, clinical review, pharmacy operations, procurement, delivery, administration and analytics.
+Live platform: https://medicinesupport.app/
+Medicine Support Hub is a bilingual digital health operations platform live at medicinesupport.app for chronic medicines support. Conceptualized, architected, and engineered end-to-end by Mina Samy Tawfik Saad, it integrates more than 86,000 Egyptian medicines across eight role-based workflows (intake, clinical review, physician check, pharmacy, procurement, delivery, admin, analytics). Mina's vision is to establish a scalable, transparent healthcare operating system across NGOs, Patient Support Programs (PSPs), and healthcare networks in Egypt and the MENA region.
 
 ## Transformation case study
 Employee Support Program case study: https://minasami.github.io/employee-support-program/
