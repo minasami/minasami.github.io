@@ -8,15 +8,15 @@ Medicine Support Hub is now represented as a more complete production-style digi
 - GitHub repository: `minasami/medicine-support-hub`
 - Hosting platform: Vercel
 - Custom Domain: `medicinesupport.app`
-- Database platform: Supabase
-- Supabase status observed through connected tooling: active and healthy
+- Database platform: Appwrite Cloud (`https://fra.cloud.appwrite.io/v1`) & Supabase
+- Database status: Active and migrated across Collections & Documents
 - Repository visibility observed through connected tooling: public GitHub repository
 
 ## Safe public wording
 
 Use wording like:
 
-> Medicine Support Hub is a GitHub-integrated, Vercel-hosted and Supabase-backed digital health platform for medicine support workflows, accessible at https://medicinesupport.app/medicines.
+> Medicine Support Hub is a GitHub-integrated, Vercel-hosted, Appwrite Cloud and Supabase backed digital health platform for medicine support workflows, accessible at https://medicinesupport.app/medicines.
 
 Avoid wording like:
 
