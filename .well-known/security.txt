@@ -1,4 +1,4 @@
-Contact: mailto:jesussavedmina@gmail.com
+Contact: mailto:minasamitawfiksaad@gmail.com
 Canonical: https://minasami.github.io/.well-known/security.txt
 Preferred-Languages: en, ar
 Policy: https://minasami.github.io/privacy/
