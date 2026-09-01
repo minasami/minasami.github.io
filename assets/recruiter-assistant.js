@@ -21,7 +21,7 @@
     { keywords: ['education', 'university', 'degree', 'study', 'johns hopkins', 'informatics'], answer: 'Mina holds a Bachelor of Pharmacy from Ain Shams University, completed in 2021, and is pursuing further learning in health informatics and project management.' },
     { keywords: ['role', 'fit', 'position', 'job', 'hiring', 'vacancy', 'roles'], answer: 'Mina is strongest for roles and collaborations in Digital Health Transformation, Healthcare Project or Program Management, PMO, Healthcare Operations, Operational Excellence, Technical Project Delivery and healthcare product or innovation work.' },
     { keywords: ['available', 'notice', 'availability', 'join'], answer: 'Mina’s stated notice period is three weeks. Contact him directly to confirm current availability.' },
-    { keywords: ['contact', 'email', 'whatsapp', 'linkedin', 'phone', 'book', 'call', 'meeting', 'invite'], answer: 'You can contact Mina at jesussavedmina@gmail.com, WhatsApp him at +20 128 459 0503, or connect through linkedin.com/in/jesussavedmina.' }
+    { keywords: ['contact', 'email', 'whatsapp', 'linkedin', 'phone', 'book', 'call', 'meeting', 'invite'], answer: 'You can contact Mina at minasamitawfiksaad@gmail.com, WhatsApp him at +20 128 459 0503, or connect through linkedin.com/in/jesussavedmina.' }
   ];
 
   function normalize(text) { return String(text || '').toLowerCase().replace(/[^a-z0-9+.,@\s-]/g, ' ').replace(/\s+/g, ' ').trim(); }
