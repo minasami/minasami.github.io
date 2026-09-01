@@ -186,6 +186,6 @@ Before publishing a significant change:
 
 ## Contact
 
-- Email: jesussavedmina@gmail.com
+- Email: minasamitawfiksaad@gmail.com
 - LinkedIn: https://linkedin.com/in/jesussavedmina
 - GitHub: https://github.com/minasami
