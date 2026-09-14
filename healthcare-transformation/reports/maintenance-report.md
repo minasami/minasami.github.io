@@ -3,7 +3,7 @@
 - Status: **PASS**
 - Pages found: 63
 - Internal links checked: 279
-- Generated: 2026-09-07T09:22:43.424269+00:00
+- Generated: 2026-09-14T09:53:55.043940+00:00
 
 ## Broken internal links
 - None
